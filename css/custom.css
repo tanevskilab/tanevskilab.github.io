@@ -1,0 +1,4 @@
+/* redefine content max width */
+.container{
+	max-width: 1080px;
+}
