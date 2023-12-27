@@ -28,7 +28,7 @@ img.full{
 }
 
 .sticky{
-	padding-top: 1rem;
+	padding: 0.5rem 1rem;
 	position: -webkit-sticky; 
 	position: sticky; 
 	top: 0; 
