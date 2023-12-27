@@ -1,4 +1,60 @@
-/* redefine content max width */
+html {
+	scroll-padding-top: 5rem;
+}
+
+a{
+	color:#003399;
+}
+
+a:hover{
+	color:#99001a;
+}
+
+img.round{
+	width: 12rem;
+	height: 12rem;
+	border-radius: 50%;
+	object-fit: cover;
+}
+
+img.full{
+	width: 90%;
+	padding: 5%;
+	max-width: 200px;
+}
+
 .container{
 	max-width: 1080px;
+}
+
+.sticky{
+	padding-top: 1rem;
+	position: -webkit-sticky; 
+	position: sticky; 
+	top: 0; 
+	z-index: 10; 
+	background-color: #dddddd99;
+}
+
+.boxin{
+	padding: 1rem 1rem;
+	border: 0.1rem solid #ddd; 
+	border-radius: 1rem;
+	margin-bottom: 1rem;
+}
+
+.button{
+	height: 30px;
+  padding: 0 25px;
+  line-height: 30px;
+}
+
+.button.button-primary{
+	background-color: #003399;
+	border-color:#000000;
+}
+
+.button.button-primary:hover{
+	background-color:#99001a;
+	border-color:#000000;
 }

@@ -17,16 +17,222 @@
 
 <body>
   
-<div class="container" style="padding: 2rem;">
-  computational<font color="#99001A">biomedical</font><font color="#003399">discovery</font>
-</div>
-
-<div class="container" style="text-align: center;">  
-      <h3 >Coming soon </h3>
-      <a href="https://github.com/tanevskilab">
-        <img width="100" height="100" src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png">
+<header class="container sticky">
+  <div class="row" style="top: 0.5rem;">
+    <div class="seven columns">
+      <a href="index.html" style="text-decoration: none; color: #000000;">
+        <h5>computational<font color="#99001A">biomedical</font><font color="#003399">discovery</font></h5>
       </a>
+    </div>
+    <div class="five columns" style="word-spacing: 0.75rem; text-align: right;">
+      <a href="#main">Research</a>
+      <a href="#main">People</a>
+      <a href="#tools">Tools</a>
+      <a href="#publications">Publications</a>
+      <a href="#positions">Positions</a>
+    </div>
+  </div>
+</header>
+
+<div class="container" style="padding-bottom: 2rem;"> 
+  <div class="row" style="text-align: center;">
+    <h3>Tanevski Lab</h3>
+      <p id="contact" style="font-size: 85%; line-height: 1.3rem;">
+      Institute for Computational Biomedicine
+      <br/>
+      Heidelberg University Hospital
+      <br/>
+      Im Neuenheimer Feld 130.3, 69120 Heidelberg, Germany
+      <br/>
+      <a>contact&lt;at&gt;tanevskilab.org</a>
+      </p>
+  </div>
 </div>
 
+
+<div class="container">
+  <div class="row">
+    <div class="nine columns">
+      <div id="main" class="boxin">
+      <h5>Research</h5>
+      <p >
+        Our group focuses on problem driven development of approaches to data exploration, hypothesis generation and computational scientific discovery to facilitate translational biomedicine.
+      </p>
+      <p >
+        Our approaches are based on representation learning and supervised analysis of highly multiplexed spatial omics data. We develop new and extend existing explainable, scalable and readily deployable methods for multi-view learning, graph neural networks, metaheuristic optimization and optimal transport to: 
+      </p>
+      <ul>
+          <li>
+            Identify clinically relevant regions and interactions by explanatory modeling and optimization of global and local tissue/condition specific persistent multicellular patterns.
+          </li>
+          <li>
+            Learn higher order structural and functional organization to form taxonomical models of tissues for comparative analyses and generation of in-silico samples.
+          </li>
+          <li>
+            Integrate multiomics data with databases of prior knowledge to discover context specific mechanistic insighs spanning multiple omics layers.
+          </li>
+      </ul>
+      <p>
+        Our interest is to address questions of structure-function relationships in disease, progression and response to treatment. 
+      </p>
+      <p>
+        We value collaborations with clinical, experimental biology groups and groups working on the development of novel methods for the acquisition of spatially resolved data. We welcome synergistic collaborations with computational groups towards the construction of more robust theoretical and computational frameworks for the analysis of all aspects of biomedical data and beyond.
+      </p>
+    </div>
+
+
+    <div id="tools" class="boxin">
+      <h5>Tools</h5>
+
+      <div class="row">
+        <div class="three columns">
+          <img class="full" src="images/misty_badge.png">
+          <p>
+            <b>MISTy</b>
+            <br/>
+            &#128279; <a href="https://saezlab.github.io/mistyR/" target="_blank">R package and page</a>
+            <br/>
+            &#128196; <a href="https://doi.org/10.1186/s13059-022-02663-5" target="_blank">Tanevski et al. 2022 Genome Biology</a>
+          </p>
+        </div>
+
+        <div class="nine columns">
+          <p>
+            The Multiview Intercellular SpaTial modeling framework (MISTy) is an explainable machine learning framework for knowledge extraction and analysis of single-cell, highly multiplexed, spatially resolved data. MISTy facilitates an in-depth understanding of intra- and intercellular relationships. MISTy is a flexible framework able to process a custom number of views. Each of these views can describe a different spatial context, i.e., define a relationship among the observed expressions of the markers, such as intracellular regulation or paracrine regulation, but also, the views can also capture cell-type based structural relationships, capture relations between functional footprints or focus on relations between different anatomical regions. Each MISTy view is considered as a potential source of variability in the measured marker expressions.
+          </p>
+        </div>
+      </div>
+      <hr>
+            <div class="row">
+        <div class="three columns">
+          <img class="full" src="images/DOT_icon.png">
+          <p>
+            <b>DOT</b>
+            <br/>
+            &#128279; <a href="https://saezlab.github.io/DOT/" target="_blank">R package and page</a>
+            <br/>
+            &#128196; <a href="https://doi.org/10.48550/arXiv.2301.01682" target="_blank">Rahimi et al. 2023 arXiv</a>
+          </p>
+        </div>
+
+        <div class="nine columns">
+          <p>
+            DOT is a method for transferring cell features from a reference single-cell RNA-seq data to spots/cells in spatial omics. It operates by optimizing a combination of multiple objectives using a Frank-Wolfe algorithm to produce a high quality transfer. Apart from transferring cell types/states to spatial omics, DOT can be used for transferring other relevant categorical or continuous features from one set of omics to another, such as estimating the expression of missinng genes or transferring transcription factor/pathway activities.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    </div>
+
+
+    <div class="three columns boxin">
+      <h5>People</h5>
+      <p><b>Group Leader</b></p>
+      <div style="text-align: center;">
+        <img class="round" src="images/jovan.jpg" style="object-position: 50% 10%;">
+        <p>
+          <a href="people.html#jovan">
+            Jovan Tanevski
+          </a>
+        </p>
+      </div>
+
+      <p><b>Postdocs</b></p>
+      <div style="text-align: center;">
+        <img class="round" src="images/anon.jpg">
+        <p>
+          <a href="people.html#anon">
+            Recruiting soon
+          </a>
+        </p>
+      </div>
+
+      <p><b>PhD Students</b></p>
+      <div style="text-align: center;">
+        <img class="round" src="images/anon.jpg">
+        <p>
+          <a href="people.html#anon">
+            Recruiting now
+          </a>
+        </p>
+      </div>
+
+      <div style="text-align: left;">
+        <a class="button button-primary" href="people.html">Learn more</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div id="publications" class="container">
+  <div class="row boxin">
+    <h5>Publications</h5>
+    Rahimi, A., Vale-Silva, L.A., Faelth Savitski, M., Tanevski, J., Saez-Rodriguez, J. <a href="https://doi.org/10.48550/arXiv.2301.01682" target="_blank">DOT: Fast Cell Type Decomposition of Spatial Omics by Optimal Transport</a>. arXiv:2301.01682 (2023).
+    <br/>
+    Heumos, L., Schaar, A.C., Lance, C. et al. <a href="https://doi.org/10.1038/s41576-023-00586-w" target="_blank">Best practices for single-cell analysis across modalities</a>. Nature Reviews Genetics 24, 550–572 (2023).
+    <br/>
+    Tanevski, J., Flores, R.O.R., Gabor, A. et al. <a href="https://doi.org/10.1186/s13059-022-02663-5" target="_blank">Explainable multiview framework for dissecting spatial relationships from highly multiplexed data</a>. Genome Biology 23, 97 (2022).
+    <br/>
+    Kuppe, C., Ramirez Flores, R.O., Li, Z. et al. <a href="https://doi.org/10.1038/s41586-022-05060-x" target="_blank">Spatial multi-omic map of human myocardial infarction</a>. Nature 608, 766–777 (2022).
+    <br/>
+    Gabor, A., Tognetti, M., Driessen, A., Tanevski, J. et al. <a href="https://doi.org/10.15252/msb.202110402" target="_blank">Cell‐to‐cell and type‐to‐type heterogeneity of signaling networks: insights from the crowd</a>. Molecular Systems Biology, 17(10), e10402 (2021).
+    <br/>
+    Schwabenland, M., Salié, H., Tanevski, J. et al. <a href="https://doi.org/10.1016/j.immuni.2021.06.002" target="_blank">Deep spatial profiling of human COVID-19 brains reveals neuroinflammation with distinct microanatomical microglia-T-cell interactions</a>. Immunity 54(70), 1594-1610.e11 (2021)
+    <br/>
+    Holland, C.H., Tanevski, J., Perales-Patón, J. et al. <a href="https://doi.org/10.1186/s13059-020-1949-z" target="_blank">Robustness and applicability of transcription factor and pathway analysis tools on single-cell RNA-seq data</a>. Genome Biology 21, 36 (2020).
+    <br/>
+    Tanevski, J., Nguyen, T., Truong, B. et al. <a href="https://doi.org/10.26508/lsa.202000867" target="_blank">Gene selection for optimal prediction of cell position in tissues from single-cell transcriptomics data</a>. Life Science Alliance 3 (11), e202000867 (2020).
+    <br/>
+    Tanevski, J., Todorovski, L., Džeroski, S. <a href="https://doi.org/10.1016/j.engappai.2019.103423" target="_blank">Combinatorial search for selecting the structure of models of dynamical systems with equation discovery</a>. Engineering Applications of Artificial Intelligence 89, 103423 (2020).
+  </div>
+</div>
+
+<div id="positions" class="container">
+  <div class="row boxin">
+    <h5>Positions</h5>
+    <p>
+      We are looking for a highly motivated and talented PhD student to join the newly created Translational Spatial Profiling Center at the Heidelberg University Hopital, managed by the Insitute for Computational Biomedicine and the Instutute for Pathology.
+    </p>
+    <p>
+      In a dynamic and multidicplinary environment, the candidate will work on the development of novel methods for analysis of state-of-the-art spatially resolved data. The candidate will explore the landscape of explainable machine-lerning and optimization approaches and create novel approaches that can be applied in a clinical setting. The work will be motivated by problems arising from a range of translational applications, initialy focusing on cancer research, and will be directly supported by data generated within the center.
+    </p>
+    The candidate should:
+    <ul>
+      <li>Have either a degree in computer science, engineering sciences, physics or mathematics, or a degree in biological sciences or medicine with previous experince in computational work.</li>
+      <li>Be motivated to work on challenging interdiscplinary project with biomedical relevance.</li>
+      <li>Have a strong interest and/or knowledge about histo(patho)logy and cancer biology.</li>
+      <li>Have experience programming in R or Python.</li>
+      <li>Have good English communication skills.</li>
+    </ul>
+
+    We offer:
+    <ul>
+      <li>Work contract and funding for 3 years according to TV-L with all corresponding social benefits.</li>
+      <li>Stimulating and supporting interdisciplinary research environment with access to international research networks.</li>
+      <li>Access to state-of-the-art spatial omics and clinical data.</li>
+      <li>Access to high performance computing infrastructure.</li>
+      <li>Access to further training opportunities offered by the Heidelberg University and Heidelberg University Hospital.</li>
+    </ul>
+
+    <p>
+      To apply please submit a <b>letter of motivation tailored to this position</b> (1 page), <b>CV</b> and a <b>list of references with contact details</b> to <a>contact&lt;at&gt;tanevskilab.org</a>.
+    </p>
+
+
+    <p>
+      <em>We would like to increase the proportion of underrepresented groups in all areas of research. Qualified female candidates are particularly encouraged to apply. However, we offer equal opportunity to all candidates. The position(s) will be offered to the candidate(s) based on their qualifications and the fit to the advertised position.</em>
+    </p>
+  </div>
+</div>
+
+<footer class = "container">
+  <div class="row" style="text-align: center;">
+    <hr>
+    &copy; 2024 Tanevski Lab
+  </div>
+</footer>
 </body>
 </html>
