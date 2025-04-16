@@ -173,7 +173,7 @@
       
 
       <div class="row">
-        <div class="three columns">
+        <div class="two columns">
           <img class="full" src="images/misty_badge.png">
           <p>
             <b>MISTy</b>
@@ -184,16 +184,13 @@
           </p>
         </div>
 
-        <div class="nine columns">
+        <div class="four columns">
           <p>
             The Multiview Intercellular SpaTial modeling framework (MISTy) is an explainable machine learning framework for knowledge extraction and analysis of single-cell, highly multiplexed, spatially resolved data. MISTy facilitates an in-depth understanding of intra- and intercellular relationships. MISTy is a flexible framework able to process a custom number of views describing a different spatial or functional context such as intracellular or broader tissue structure, cell-type composition, functional footprints or anatomical regions.
           </p>
         </div>
-      </div>
-      <hr>
 
-      <div class="row">
-        <div class="three columns">
+        <div class="two columns">
           <img class="full" src="images/kasumi_badge.png">
           <p>
             <b>Kasumi</b>
@@ -204,16 +201,17 @@
           </p>
         </div>
 
-        <div class="nine columns">
+        <div class="four columns">
           <p>
             Kasumi is a method for the identification of spatially localized neighborhoods of intra- and intercellular relationships, persistent across samples and conditions. Kasumi learns compressed explainable representations of spatial omics samples while preserving relevant biological signals that are readily deployable for data exploration and hypothesis generation, facilitating translational tasks.
           </p>
         </div>
       </div>
+
       <hr>
 
       <div class="row">
-        <div class="three columns">
+        <div class="two columns">
           <img class="full" src="images/DOT_icon.png">
           <p>
             <b>DOT</b>
@@ -224,48 +222,73 @@
           </p>
         </div>
 
-        <div class="nine columns">
+        <div class="four columns">
           <p>
             DOT is a method for transferring cell features from a reference single-cell RNA-seq data to spots/cells in spatial omics. It operates by optimizing a combination of multiple objectives using a Frank-Wolfe algorithm to produce a high quality transfer. Apart from transferring cell types/states to spatial omics, DOT can be used for transferring other relevant categorical or continuous features from one set of omics to another, such as estimating the expression of missinng genes or transferring transcription factor/pathway activities.
           </p>
         </div>
-      </div>
+      
 
+        <div class="two columns">
+          <img class="full" src="images/TOAST_icon.png">
+          <p>
+            <br/>
+            <b>TOAST</b>
+            <br/>
+            &#128279; <a href="https://github.com/cecca46/TOAST" target="_blank">Python package and page</a>
+            <br/>
+            &#128196; <a href="" target="_blank">Ceccarelli et al. 2025 bioRxiv</a>
+          </p>
+        </div>
+
+        <div class="four columns">
+          <p>
+            TOAST (Topography-aware Optimal Alignment of Spatially-resolved Tissues), is a spatially aware Fused Gromov-Wasserstein (FGW) framework for intra-, intersample and temporal alignment of spatial omics data, which explicitly incorporates spatial constraints into the optimal transport objective. TOAST tranfers annotations accross aligned samples, recovers differentiation trajectories and maps single cells to spatial locations.
+          </p>
+        </div>
+
+    </div>
   </div>
 </div>
 
 <div id="publications" class="container">
   <div class="row boxin">
     <h5>Publications</h5>
-    Tanevski, J., Vuillard, L., Hartmann, F., Saez-Rodriguez, J. <a href="https://doi.org/10.1101/2024.03.06.583691" target="_blank">Learning tissue representation by identification of persistent local patterns in spatial omics data</a>. bioRxiv:2024.03.06.583691 (2024).
+    Ceccarelli, F., Lio, P., Saez-Rodriguez, J., Holden, S. B., Tanevski, J. <a href="">Topography Aware Optimal Transport for Alignment of Spatial Omics Data</a>. <em>bioRxiv</em>:2025.04.15. (2025).
+    <br/> 
+    Schiller, C., Ibarra-Arellano, Miguel A., Bestak, K., Tanevski, J., Schapiro, D. <a href="https://doi.org/10.1101/2025.03.31.646289">Comparison and Optimization of Cellular Neighbor Preference Methods for Quantitative Tissue Analysis</a>. <em>bioRxiv</em>:2025.03.31.646289 (2025).
     <br/>
-    Rahimi, A., Vale-Silva, L.A., Faelth Savitski, M., Tanevski, J., Saez-Rodriguez, J. <a href="https://doi.org/10.1038/s41467-024-48868-z" target="_blank">DOT: a flexible multi-objective optimization framework for transferring features across single-cell and spatial omics</a>. Nature Communications 15 (2024).
+    Tanevski, J., Vuillard, L., Hartmann, F., Saez-Rodriguez, J. <a href="https://doi.org/10.1101/2024.03.06.583691" target="_blank">Learning tissue representation by identification of persistent local patterns in spatial omics data</a>. <em>bioRxiv</em>:2024.03.06.583691 (2024).
     <br/>
-    Dimitrov, D., Schäfer, P.S.L., Farr, E., et al. <a href="https://doi.org/10.1038/s41556-024-01469-w" target="_blank">LIANA+ provides an all-in-one framework for cell–cell communication inference</a>. Nature Cell Biology (2024).
+    Rahimi, A., Vale-Silva, L.A., Faelth Savitski, M., Tanevski, J., Saez-Rodriguez, J. <a href="https://doi.org/10.1038/s41467-024-48868-z" target="_blank">DOT: a flexible multi-objective optimization framework for transferring features across single-cell and spatial omics</a>. <em>Nature Communications</em> 15 (2024).
     <br/>
-    Laury, A. R., Zheng, S., Aho, N. et al. <a href="https://doi.org/10.1016/j.modpat.2024.100508" target ="_blank">Opening the black box: spatial transcriptomics and the relevance of AI-detected prognostic regions in high grade serous carcinoma</a>. Modern Pathology 100508 (2024).
+    Dimitrov, D., Schäfer, P.S.L., Farr, E., et al. <a href="https://doi.org/10.1038/s41556-024-01469-w" target="_blank">LIANA+ provides an all-in-one framework for cell–cell communication inference</a>. <em>Nature Cell Biology</em> (2024).
     <br/>
-    Paton, V., Gabor, A., Ramirez Flores, R.O. et al. <a href="https://doi.org/10.1093/nar/gkae552" target="_blank">Assessing the impact of transcriptomics data analysis pipelines on downstream functional enrichment results</a>. Nucleic Acids Research (2024).
+    Laury, A. R., Zheng, S., Aho, N. et al. <a href="https://doi.org/10.1016/j.modpat.2024.100508" target ="_blank">Opening the black box: spatial transcriptomics and the relevance of AI-detected prognostic regions in high grade serous carcinoma</a>. <em>Modern Pathology</em> 100508 (2024).
     <br/>
-    Heumos, L., Schaar, A.C., Lance, C. et al. <a href="https://doi.org/10.1038/s41576-023-00586-w" target="_blank">Best practices for single-cell analysis across modalities</a>. Nature Reviews Genetics 24, 550–572 (2023).
+    Paton, V., Gabor, A., Ramirez Flores, R.O. et al. <a href="https://doi.org/10.1093/nar/gkae552" target="_blank">Assessing the impact of transcriptomics data analysis pipelines on downstream functional enrichment results</a>. <em>Nucleic Acids Research</em> (2024).
     <br/>
-    Tanevski, J., Ramirez Flores, R.O., Gabor, A. et al. <a href="https://doi.org/10.1186/s13059-022-02663-5" target="_blank">Explainable multiview framework for dissecting spatial relationships from highly multiplexed data</a>. Genome Biology 23, 97 (2022).
+    Wünnemann, F., Sicklinger, F., Bestak, K., et al. <a href="https://doi.org/10.1101/2024.05.20.594955">Spatial omics of acute myocardial infarction reveals a novel mode of immune cell infiltration</a>. <em>bioRxiv</em>:2024.05.20.594955 (2025).
     <br/>
-    Kuppe, C., Ramirez Flores, R.O., Li, Z. et al. <a href="https://doi.org/10.1038/s41586-022-05060-x" target="_blank">Spatial multi-omic map of human myocardial infarction</a>. Nature 608, 766–777 (2022).
+    Heumos, L., Schaar, A.C., Lance, C. et al. <a href="https://doi.org/10.1038/s41576-023-00586-w" target="_blank">Best practices for single-cell analysis across modalities</a>. <em>Nature Reviews Genetics</em> 24, 550–572 (2023).
     <br/>
-    Gabor, A., Tognetti, M., Driessen, A., Tanevski, J. et al. <a href="https://doi.org/10.15252/msb.202110402" target="_blank">Cell‐to‐cell and type‐to‐type heterogeneity of signaling networks: insights from the crowd</a>. Molecular Systems Biology, 17(10), e10402 (2021).
+    Tanevski, J., Ramirez Flores, R.O., Gabor, A. et al. <a href="https://doi.org/10.1186/s13059-022-02663-5" target="_blank">Explainable multiview framework for dissecting spatial relationships from highly multiplexed data</a>. <em>Genome Biology</em> 23, 97 (2022).
     <br/>
-    Schwabenland, M., Salié, H., Tanevski, J. et al. <a href="https://doi.org/10.1016/j.immuni.2021.06.002" target="_blank">Deep spatial profiling of human COVID-19 brains reveals neuroinflammation with distinct microanatomical microglia-T-cell interactions</a>. Immunity 54(70), 1594-1610.e11 (2021)
+    Kuppe, C., Ramirez Flores, R.O., Li, Z. et al. <a href="https://doi.org/10.1038/s41586-022-05060-x" target="_blank">Spatial multi-omic map of human myocardial infarction</a>. <em>Nature</em> 608, 766–777 (2022).
     <br/>
-    Holland, C.H., Tanevski, J., Perales-Patón, J. et al. <a href="https://doi.org/10.1186/s13059-020-1949-z" target="_blank">Robustness and applicability of transcription factor and pathway analysis tools on single-cell RNA-seq data</a>. Genome Biology 21, 36 (2020).
+    Gabor, A., Tognetti, M., Driessen, A., Tanevski, J. et al. <a href="https://doi.org/10.15252/msb.202110402" target="_blank">Cell‐to‐cell and type‐to‐type heterogeneity of signaling networks: insights from the crowd</a>. <em>Molecular Systems Biology</em>, 17(10), e10402 (2021).
     <br/>
-    Tanevski, J., Nguyen, T., Truong, B. et al. <a href="https://doi.org/10.26508/lsa.202000867" target="_blank">Gene selection for optimal prediction of cell position in tissues from single-cell transcriptomics data</a>. Life Science Alliance 3 (11), e202000867 (2020).
+    Schwabenland, M., Salié, H., Tanevski, J. et al. <a href="https://doi.org/10.1016/j.immuni.2021.06.002" target="_blank">Deep spatial profiling of human COVID-19 brains reveals neuroinflammation with distinct microanatomical microglia-T-cell interactions</a>. <em>Immunity</em> 54(70), 1594-1610.e11 (2021)
     <br/>
-    Tanevski, J., Todorovski, L., Džeroski, S. <a href="https://doi.org/10.1016/j.engappai.2019.103423" target="_blank">Combinatorial search for selecting the structure of models of dynamical systems with equation discovery</a>. Engineering Applications of Artificial Intelligence 89, 103423 (2020).
+    Holland, C.H., Tanevski, J., Perales-Patón, J. et al. <a href="https://doi.org/10.1186/s13059-020-1949-z" target="_blank">Robustness and applicability of transcription factor and pathway analysis tools on single-cell RNA-seq data</a>. <em>Genome Biology</em> 21, 36 (2020).
     <br/>
-    Tanevski, J., Todorovski, L., Džeroski, S. <a href="https://doi.org/10.1038/srep34107" target="_blank">Process-based design of dynamical biological systems</a>. Scientific Reports 6, 34107 (2016).
+    Tanevski, J., Nguyen, T., Truong, B. et al. <a href="https://doi.org/10.26508/lsa.202000867" target="_blank">Gene selection for optimal prediction of cell position in tissues from single-cell transcriptomics data</a>. <em>Life Science Alliance</em> 3 (11), e202000867 (2020).
     <br/>
-    Tanevski, J., Todorovski, L., Džeroski, S. <a href="https://doi.org/10.1186/s12918-016-0273-4" target="_blank">Learning stochastic process-based models of dynamical systems from knowledge and data</a>. BMC Systems Biology 10, 30 (2016).
+    Tanevski, J., Todorovski, L., Džeroski, S. <a href="https://doi.org/10.1016/j.engappai.2019.103423" target="_blank">Combinatorial search for selecting the structure of models of dynamical systems with equation discovery</a>. <em>Engineering Applications of Artificial Intelligence</em> 89, 103423 (2020).
+    <br/>
+    Tanevski, J., Todorovski, L., Džeroski, S. <a href="https://doi.org/10.1038/srep34107" target="_blank">Process-based design of dynamical biological systems</a>. <em>Scientific Reports</em> 6, 34107 (2016).
+    <br/>
+    Tanevski, J., Todorovski, L., Džeroski, S. <a href="https://doi.org/10.1186/s12918-016-0273-4" target="_blank">Learning stochastic process-based models of dynamical systems from knowledge and data</a>. <em>BMC Systems Biology</em> 10, 30 (2016).
   </div>
 </div>
 
@@ -276,12 +299,12 @@
 
     <h6>Interns/Master theses</h6>
     <p>
-      We offer opportunities for internships and supervision of master theses. We recommend that the duration of the internships is no shorter than three months. To inquire and apply write to <a>contact&lt;at&gt;tanevskilab.org</a>. Please include a CV, information on relevant courses attended during bachelor and/or master studies as well as well as a cover letter describing your more specific interests in the work done in our lab.
+      We continiously offer opportunities for internships and supervision of master theses. We recommend that the duration of the internships is no shorter than three months.
     </p>
 
 
-    <!-- <h6>PhD</h6>
-    <p>
+    <h6>PhD</h6>
+    <!--<p>
       We are looking for a highly motivated and talented PhD student to join the newly created Translational Spatial Profiling Center at the Heidelberg University Hospital, managed by the Institute for Computational Biomedicine and the Institute for Pathology.
     </p>
     <p>
@@ -294,11 +317,13 @@
       <li>Have a strong interest and/or knowledge about histo(patho)logy and cancer biology.</li>
       <li>Have experience programming in R or Python.</li>
       <li>Have good English communication skills.</li>
-    </ul>
+    </ul> -->
+  
+    We currently have an open PhD position in modeling and integration of multilayered omics data with microscopy/pathology imaging data with focus on patients with heart failure with preserved ejection fraction. For more information see the post on <a href="https://jobrxiv.org/job/heidelberg-university-and-heidelberg-university-hospital-27778-phd-postdoc-in-spatial-omics-for-cardiology/">jobRxiv</a>.
 
-    <hr> -->
+    <hr> 
 
-    <h6>Postdoc</h6>
+    <!-- <h6>Postdoc</h6>
     <p>
       We are looking for a postdoctoral researcher for a 2 year project on the topic of Identifying the clinical relevance of higher order tissue organization in the tumor microenvironment from spatial multiplexed omics data. The position is offered as part of the Health + Life Science Alliance Inter-institutional Postdoc Program</a>. The position will be shared between the Tanevski Lab at the Heidelberg University Hospital and the <a href="https://www.dkfz.de/en/systemimmunologie-und-einzelzell-biologie/index.php">Hartmann lab</a> at DKFZ.
     </p>
@@ -310,8 +335,8 @@
       <li>Have either a degree in computer science, engineering sciences, physics or mathematics, or a degree in biological sciences or medicine with previous experience in computational work.</li>
       <li>Have experience programming in R or Python.</li>
       <li>Interest in spatial omics and cancer biology.</li>
-    </ul> 
-
+    </ul>  -->
+    
     <hr>
 
     For all PhD and Postdoc postions we offer:
