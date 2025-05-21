@@ -4,14 +4,40 @@
 <head>
   <meta charset="utf-8">
   <meta name="description" content="Tanevski Lab - Computational biomedical discovery. Machine learning / Artificial intelligence methods for analysis of spatial omics data in Heidelberg"/>
-  <meta name="keywords" content="spatial, single-cell, omics, machine learning, ML, optimization , artificial intelligence, AI, heidelberg, germany, proteomics, transcriptomics, metabolomics, translational, computational, biology. biomedicine, medicine" />
+  <meta name="keywords" content="spatial, single-cell, omics, machine learning, ML, optimization , artificial intelligence, AI, Heidelberg, Germany, proteomics, transcriptomics, metabolomics, translational, computational, biology, biomedicine, medicine" />
   <title>Tanevski Lab | Computational biomedical discovery | Spatial omics | Heidelberg</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="Jovan Tanevski">
 
+  <!-- OpenGraph / Social Meta -->
+  <meta property="og:title" content="Tanevski Lab | Computational Biomedical Discovery | Heidelberg">
+  <meta property="og:description" content="AI/ML methods for spatial omics data analysis.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tanevskilab.org">
+  <meta property="og:image" content="https://tanevskilab.org/images/logo.png">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:description" content="Explainable AI/ML for spatial omics and computational biomedical discovery.">
+  <meta name="twitter:image" content="https://tanevskilab.org/images/logo.png">
+  <meta name="twitter:creator" content="@tanevski">
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://tanevskilab.org">
+
+    <!-- Preload Critical CSS -->
+  <link rel="preload" href="css/normalize.css" as="style">
+  <link rel="preload" href="css/skeleton.css" as="style">
+  <link rel="preload" href="css/custom.css" as="style">
+
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/custom.css">
+
+
+  <!-- Font Awesome for Social Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  
 
   <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
@@ -25,29 +51,34 @@
         <h5>computational<font color="#99001A">biomedical</font><font color="#003399">discovery</font></h5>
       </a>
     </div>
-    <div class="five columns" style="word-spacing: 0.75rem; text-align: right;">
+    <nav class="five columns" style="word-spacing: 0.75rem; text-align: right;">
       <a href="#main">Research</a>
       <a href="#people">People</a>
       <a href="#tools">Tools</a>
       <a href="#publications">Publications</a>
       <a href="#positions">Positions</a>
-    </div>
+    </nav>
   </div>
 </header>
 
 <div class="container" style="padding-bottom: 2rem;"> 
   <div class="row" style="text-align: center;">
     <h3>Tanevski Lab</h3>
-      <img src="images/logo.png" style="width: 15%;">
-      <p id="contact" style="font-size: 85%; line-height: 1.3rem;">
-      Institute for Computational Biomedicine
-      <br/>
-      Heidelberg University Hospital
-      <br/>
-      Im Neuenheimer Feld 130.3, 69120 Heidelberg, Germany
-      <br/>
-      <a>contact&lt;at&gt;tanevskilab.org</a>
-      </p>
+      <img src="images/logo.png" alt="Tanevski Lab Logo" style="width: 15%;" loading="lazy">
+        <address id="contact" style="font-size: 85%; line-height: 1.3rem;">
+          Institute for Computational Biomedicine<br>
+          Heidelberg University Hospital<br>
+          Im Neuenheimer Feld 130.3, 69120 Heidelberg, Germany<br>
+          <a href="mailto:contact@tanevskilab.org">contact@tanevskilab.org</a>
+        </address>
+        <div class="social-links" style="margin-top: 1rem;">
+          <a href="https://bsky.app/profile/tanevski.bsky.social" aria-label="Bluesky" rel="noopener noreferrer me"><i class="fab fa-bluesky"></i></a>
+          <a href="https://x.com/tanevski" aria-label="X" rel="noopener noreferrer me"><i class="fab fa-x-twitter"></i></a>
+          <a href="https://github.com/tanevskilab" aria-label="GitHub" rel="noopener noreferrer me"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com/in/tanevski" aria-label="LinkedIn" rel="noopener noreferrer me"><i class="fab fa-linkedin"></i></a>
+          <a href="https://scholar.google.com/citations?user=F47ynYgAAAAJ" aria-label="Google Scholar" rel="noopener noreferrer me"><i class="fab fa-google"></i></a>
+        </div>
+        <hr>
   </div>
 </div>
 
@@ -86,7 +117,7 @@
   <div class = "row boxin">
       <p><b>Group Leader</b></p>
       <div style="text-align: center;">
-        <img class="round" src="images/jovan.jpg" style="max-width: 150px; object-position: 50% 10%;">
+        <img class="round" src="images/jovan.jpg" style="max-width: 150px; object-position: 50% 10%;" loading="lazy">
         <p>
           <a>
             Jovan Tanevski
@@ -97,16 +128,25 @@
   <div class = "row boxin">
     <p><b>Members</b></p>
     <div class = "two columns" style="max-width: 150px; text-align: center;">
-        <img class="round" src="images/chang.jpg">
+        <img class="round" src="images/chang.jpg" alt="Chang Lu" loading="lazy">
         <p>
           <a>
             Chang Lu
           </a>
           <br/>Postdoc
         </p>
-      </div>
+    </div>
     <div class = "two columns" style="max-width: 150px; text-align: center;">
-      <img class="round" src="images/sebastian.jpg">
+        <img class="round" src="images/yunfan.jpeg" alt="Yunfan Bai" loading="lazy">
+        <p>
+          <a>
+            Yunfan Bai
+          </a>
+          <br/>Postdoc
+        </p>
+    </div>
+    <div class = "two columns" style="max-width: 150px; text-align: center;">
+      <img class="round" src="images/sebastian.jpg" alt="Sebastian Gonzalez Tirado" loading="lazy">
       <p>
         <a>
           Sebastian Gonzalez Tirado
@@ -116,7 +156,7 @@
       
     </div>
     <div class = "two columns" style="max-width: 150px; text-align: center;">
-      <img class="round" src="images/aroj.jpg">
+      <img class="round" src="images/aroj.jpg" alt="Aroj Hada" loading="lazy">
       <p>
         <a>
           Aroj Hada 
@@ -125,7 +165,7 @@
       </p>
     </div>
     <div class = "two columns" style="max-width: 150px; text-align: center;">
-      <img class="round" src="images/leoni.jpeg" style="object-position: 50% 10%;">
+      <img class="round" src="images/leoni.jpeg" style="object-position: 50% 10%;" alt="Leoni Zimmermann" loading="lazy">
       <p>
         <a>
           Leoni Zimmermann 
@@ -137,7 +177,7 @@
    <div class = "row boxin">
     <p><b>Associated Members</b></p>
     <div class = "two columns" style="max-width: 150px; text-align: center;">
-     <img class="round" src="images/philipp.jpg">
+     <img class="round" src="images/philipp.jpg" alt="Philipp Schäfer" loading="lazy">
         <p>
           <a>
             Philipp Schäfer
@@ -146,7 +186,7 @@
         </p>
     </div>
     <div class = "two columns" style="max-width: 150px; text-align: center;">
-      <img class="round" src="images/robin.jpg">
+      <img class="round" src="images/robin.jpg" alt="Robin Fallegger" loading="lazy">
         <p>
           <a>
             Robin Fallegger
@@ -155,7 +195,7 @@
         </p>
     </div>
     <div class = "two columns" style="max-width: 150px; text-align: center;">
-      <img class="round" src="images/chiara.jpg">
+      <img class="round" src="images/chiara.jpg" alt="Chiara Schiller" loading="lazy">
         <p>
           <a>
             Chiara Schiller
@@ -178,9 +218,9 @@
           <p>
             <b>MISTy</b>
             <br/>
-            &#128279; <a href="https://saezlab.github.io/mistyR/" target="_blank">R package and page</a>
+            &#128279; <a href="https://saezlab.github.io/mistyR/" target="_blank" rel="noopener noreferrer">R package and page</a>
             <br/>
-            &#128196; <a href="https://doi.org/10.1186/s13059-022-02663-5" target="_blank">Tanevski et al. 2022 Genome Biology</a>
+            &#128196; <a href="https://doi.org/10.1186/s13059-022-02663-5" target="_blank" rel="noopener noreferrer">Tanevski et al. 2022 Genome Biology</a>
           </p>
         </div>
 
@@ -195,9 +235,9 @@
           <p>
             <b>Kasumi</b>
             <br/>
-            &#128279; <a href="https://github.com/jtanevski/kasumi" target="_blank">R package</a>
+            &#128279; <a href="https://github.com/jtanevski/kasumi" target="_blank" rel="noopener noreferrer">R package</a>
             <br/>
-            &#128196; <a href="https://doi.org/10.1038/s41467-025-59448-0" target="_blank">Tanevski et al. 2025 Nature Communications</a>
+            &#128196; <a href="https://doi.org/10.1038/s41467-025-59448-0" target="_blank" rel="noopener noreferrer">Tanevski et al. 2025 Nature Communications</a>
           </p>
         </div>
 
@@ -216,9 +256,9 @@
           <p>
             <b>DOT</b>
             <br/>
-            &#128279; <a href="https://saezlab.github.io/DOT/" target="_blank">R package and page</a>
+            &#128279; <a href="https://saezlab.github.io/DOT/" target="_blank" rel="noopener noreferrer">R package and page</a>
             <br/>
-            &#128196; <a href="https://doi.org/10.1038/s41467-024-48868-z" target="_blank">Rahimi et al. 2024 Nature Communications</a>
+            &#128196; <a href="https://doi.org/10.1038/s41467-024-48868-z" target="_blank" rel="noopener noreferrer">Rahimi et al. 2024 Nature Communications</a>
           </p>
         </div>
 
@@ -235,9 +275,9 @@
             <br/>
             <b>TOAST</b>
             <br/>
-            &#128279; <a href="https://github.com/cecca46/TOAST" target="_blank">Python package and page</a>
+            &#128279; <a href="https://github.com/cecca46/TOAST" target="_blank" rel="noopener noreferrer">Python package and page</a>
             <br/>
-            &#128196; <a href="https://doi.org/10.1101/2025.04.15.648894" target="_blank">Ceccarelli et al. 2025 bioRxiv</a>
+            &#128196; <a href="https://doi.org/10.1101/2025.04.15.648894" target="_blank" rel="noopener noreferrer">Ceccarelli et al. 2025 bioRxiv</a>
           </p>
         </div>
 
@@ -254,41 +294,41 @@
 <div id="publications" class="container">
   <div class="row boxin">
     <h5>Publications</h5>
-    Tanevski, J., Vuillard, L., Ibarra-Arellano, M. A., Schapiro, D., Hartmann, F. J., Saez-Rodriguez, J. <a href="hhttps://doi.org/10.1038/s41467-025-59448-0" target="_blank">Learning tissue representation by identification of persistent local patterns in spatial omics data</a>. <em>Nature Communications</em>:16, 4071 (2025).
+    Tanevski, J., Vuillard, L., Ibarra-Arellano, M. A., Schapiro, D., Hartmann, F. J., Saez-Rodriguez, J. <a href="https://doi.org/10.1038/s41467-025-59448-0" target="_blank" rel="noopener noreferrer">Learning tissue representation by identification of persistent local patterns in spatial omics data</a>. <em>Nature Communications</em>:16, 4071 (2025).
     <br/>
-    Ceccarelli, F., Lio, P., Saez-Rodriguez, J., Holden, S. B., Tanevski, J. <a href="https://doi.org/10.1101/2025.04.15.648894">Topography Aware Optimal Transport for Alignment of Spatial Omics Data</a>. <em>bioRxiv</em>:2025.04.15.648894 (2025).
+    Ceccarelli, F., Lio, P., Saez-Rodriguez, J., Holden, S. B., Tanevski, J. <a href="https://doi.org/10.1101/2025.04.15.648894" target="_blank" rel="noopener noreferrer">Topography Aware Optimal Transport for Alignment of Spatial Omics Data</a>. <em>bioRxiv</em>:2025.04.15.648894 (2025).
     <br/> 
-    Schiller, C., Ibarra-Arellano, M. A., Bestak, K., Tanevski, J., Schapiro, D. <a href="https://doi.org/10.1101/2025.03.31.646289">Comparison and Optimization of Cellular Neighbor Preference Methods for Quantitative Tissue Analysis</a>. <em>bioRxiv</em>:2025.03.31.646289 (2025).
+    Schiller, C., Ibarra-Arellano, M. A., Bestak, K., Tanevski, J., Schapiro, D. <a href="https://doi.org/10.1101/2025.03.31.646289" target="_blank" rel="noopener noreferrer">Comparison and Optimization of Cellular Neighbor Preference Methods for Quantitative Tissue Analysis</a>. <em>bioRxiv</em>:2025.03.31.646289 (2025).
     <br/>
-    Rahimi, A., Vale-Silva, L.A., Faelth Savitski, M., Tanevski, J., Saez-Rodriguez, J. <a href="https://doi.org/10.1038/s41467-024-48868-z" target="_blank">DOT: a flexible multi-objective optimization framework for transferring features across single-cell and spatial omics</a>. <em>Nature Communications</em> 15, 4994 (2024).
+    Rahimi, A., Vale-Silva, L.A., Faelth Savitski, M., Tanevski, J., Saez-Rodriguez, J. <a href="https://doi.org/10.1038/s41467-024-48868-z" target="_blank" rel="noopener noreferrer">DOT: a flexible multi-objective optimization framework for transferring features across single-cell and spatial omics</a>. <em>Nature Communications</em> 15, 4994 (2024).
     <br/>
-    Dimitrov, D., Schäfer, P.S.L., Farr, E., et al. <a href="https://doi.org/10.1038/s41556-024-01469-w" target="_blank">LIANA+ provides an all-in-one framework for cell–cell communication inference</a>. <em>Nature Cell Biology</em> 26, 1613–1622 (2024).
+    Dimitrov, D., Schäfer, P.S.L., Farr, E., et al. <a href="https://doi.org/10.1038/s41556-024-01469-w" target="_blank" rel="noopener noreferrer">LIANA+ provides an all-in-one framework for cell–cell communication inference</a>. <em>Nature Cell Biology</em> 26, 1613–1622 (2024).
     <br/>
-    Laury, A. R., Zheng, S., Aho, N. et al. <a href="https://doi.org/10.1016/j.modpat.2024.100508" target ="_blank">Opening the black box: spatial transcriptomics and the relevance of AI-detected prognostic regions in high grade serous carcinoma</a>. <em>Modern Pathology</em> 100508 (2024).
+    Laury, A. R., Zheng, S., Aho, N. et al. <a href="https://doi.org/10.1016/j.modpat.2024.100508" target ="_blank" rel="noopener noreferrer">Opening the black box: spatial transcriptomics and the relevance of AI-detected prognostic regions in high grade serous carcinoma</a>. <em>Modern Pathology</em> 100508 (2024).
     <br/>
-    Paton, V., Gabor, A., Ramirez Flores, R.O. et al. <a href="https://doi.org/10.1093/nar/gkae552" target="_blank">Assessing the impact of transcriptomics data analysis pipelines on downstream functional enrichment results</a>. <em>Nucleic Acids Research</em> 52(14) 8100-8111 (2024).
+    Paton, V., Gabor, A., Ramirez Flores, R.O. et al. <a href="https://doi.org/10.1093/nar/gkae552" target="_blank" rel="noopener noreferrer">Assessing the impact of transcriptomics data analysis pipelines on downstream functional enrichment results</a>. <em>Nucleic Acids Research</em> 52(14) 8100-8111 (2024).
     <br/>
-    Wünnemann, F., Sicklinger, F., Bestak, K., et al. <a href="https://doi.org/10.1101/2024.05.20.594955">Spatial omics of acute myocardial infarction reveals a novel mode of immune cell infiltration</a>. <em>bioRxiv</em>:2024.05.20.594955 (2024).
+    Wünnemann, F., Sicklinger, F., Bestak, K., et al. <a href="https://doi.org/10.1101/2024.05.20.594955" rel="noopener noreferrer">Spatial omics of acute myocardial infarction reveals a novel mode of immune cell infiltration</a>. <em>bioRxiv</em>:2024.05.20.594955 (2024).
     <br/>
-    Heumos, L., Schaar, A.C., Lance, C. et al. <a href="https://doi.org/10.1038/s41576-023-00586-w" target="_blank">Best practices for single-cell analysis across modalities</a>. <em>Nature Reviews Genetics</em> 24, 550–572 (2023).
+    Heumos, L., Schaar, A.C., Lance, C. et al. <a href="https://doi.org/10.1038/s41576-023-00586-w" target="_blank" rel="noopener noreferrer">Best practices for single-cell analysis across modalities</a>. <em>Nature Reviews Genetics</em> 24, 550–572 (2023).
     <br/>
-    Tanevski, J., Ramirez Flores, R.O., Gabor, A. et al. <a href="https://doi.org/10.1186/s13059-022-02663-5" target="_blank">Explainable multiview framework for dissecting spatial relationships from highly multiplexed data</a>. <em>Genome Biology</em> 23, 97 (2022).
+    Tanevski, J., Ramirez Flores, R.O., Gabor, A. et al. <a href="https://doi.org/10.1186/s13059-022-02663-5" target="_blank" rel="noopener noreferrer">Explainable multiview framework for dissecting spatial relationships from highly multiplexed data</a>. <em>Genome Biology</em> 23, 97 (2022).
     <br/>
-    Kuppe, C., Ramirez Flores, R.O., Li, Z. et al. <a href="https://doi.org/10.1038/s41586-022-05060-x" target="_blank">Spatial multi-omic map of human myocardial infarction</a>. <em>Nature</em> 608, 766–777 (2022).
+    Kuppe, C., Ramirez Flores, R.O., Li, Z. et al. <a href="https://doi.org/10.1038/s41586-022-05060-x" target="_blank" rel="noopener noreferrer">Spatial multi-omic map of human myocardial infarction</a>. <em>Nature</em> 608, 766–777 (2022).
     <br/>
-    Gabor, A., Tognetti, M., Driessen, A., Tanevski, J. et al. <a href="https://doi.org/10.15252/msb.202110402" target="_blank">Cell‐to‐cell and type‐to‐type heterogeneity of signaling networks: insights from the crowd</a>. <em>Molecular Systems Biology</em>, 17(10), e10402 (2021).
+    Gabor, A., Tognetti, M., Driessen, A., Tanevski, J. et al. <a href="https://doi.org/10.15252/msb.202110402" target="_blank" rel="noopener noreferrer">Cell‐to‐cell and type‐to‐type heterogeneity of signaling networks: insights from the crowd</a>. <em>Molecular Systems Biology</em>, 17(10), e10402 (2021).
     <br/>
-    Schwabenland, M., Salié, H., Tanevski, J. et al. <a href="https://doi.org/10.1016/j.immuni.2021.06.002" target="_blank">Deep spatial profiling of human COVID-19 brains reveals neuroinflammation with distinct microanatomical microglia-T-cell interactions</a>. <em>Immunity</em> 54(70), 1594-1610.e11 (2021)
+    Schwabenland, M., Salié, H., Tanevski, J. et al. <a href="https://doi.org/10.1016/j.immuni.2021.06.002" target="_blank" rel="noopener noreferrer">Deep spatial profiling of human COVID-19 brains reveals neuroinflammation with distinct microanatomical microglia-T-cell interactions</a>. <em>Immunity</em> 54(70), 1594-1610.e11 (2021)
     <br/>
-    Holland, C.H., Tanevski, J., Perales-Patón, J. et al. <a href="https://doi.org/10.1186/s13059-020-1949-z" target="_blank">Robustness and applicability of transcription factor and pathway analysis tools on single-cell RNA-seq data</a>. <em>Genome Biology</em> 21, 36 (2020).
+    Holland, C.H., Tanevski, J., Perales-Patón, J. et al. <a href="https://doi.org/10.1186/s13059-020-1949-z" target="_blank" rel="noopener noreferrer">Robustness and applicability of transcription factor and pathway analysis tools on single-cell RNA-seq data</a>. <em>Genome Biology</em> 21, 36 (2020).
     <br/>
-    Tanevski, J., Nguyen, T., Truong, B. et al. <a href="https://doi.org/10.26508/lsa.202000867" target="_blank">Gene selection for optimal prediction of cell position in tissues from single-cell transcriptomics data</a>. <em>Life Science Alliance</em> 3 (11), e202000867 (2020).
+    Tanevski, J., Nguyen, T., Truong, B. et al. <a href="https://doi.org/10.26508/lsa.202000867" target="_blank" rel="noopener noreferrer">Gene selection for optimal prediction of cell position in tissues from single-cell transcriptomics data</a>. <em>Life Science Alliance</em> 3 (11), e202000867 (2020).
     <br/>
-    Tanevski, J., Todorovski, L., Džeroski, S. <a href="https://doi.org/10.1016/j.engappai.2019.103423" target="_blank">Combinatorial search for selecting the structure of models of dynamical systems with equation discovery</a>. <em>Engineering Applications of Artificial Intelligence</em> 89, 103423 (2020).
+    Tanevski, J., Todorovski, L., Džeroski, S. <a href="https://doi.org/10.1016/j.engappai.2019.103423" target="_blank" rel="noopener noreferrer">Combinatorial search for selecting the structure of models of dynamical systems with equation discovery</a>. <em>Engineering Applications of Artificial Intelligence</em> 89, 103423 (2020).
     <br/>
-    Tanevski, J., Todorovski, L., Džeroski, S. <a href="https://doi.org/10.1038/srep34107" target="_blank">Process-based design of dynamical biological systems</a>. <em>Scientific Reports</em> 6, 34107 (2016).
+    Tanevski, J., Todorovski, L., Džeroski, S. <a href="https://doi.org/10.1038/srep34107" target="_blank" rel="noopener noreferrer">Process-based design of dynamical biological systems</a>. <em>Scientific Reports</em> 6, 34107 (2016).
     <br/>
-    Tanevski, J., Todorovski, L., Džeroski, S. <a href="https://doi.org/10.1186/s12918-016-0273-4" target="_blank">Learning stochastic process-based models of dynamical systems from knowledge and data</a>. <em>BMC Systems Biology</em> 10, 30 (2016).
+    Tanevski, J., Todorovski, L., Džeroski, S. <a href="https://doi.org/10.1186/s12918-016-0273-4" target="_blank" rel="noopener noreferrer">Learning stochastic process-based models of dynamical systems from knowledge and data</a>. <em>BMC Systems Biology</em> 10, 30 (2016).
   </div>
 </div>
 
@@ -303,8 +343,8 @@
     </p>
 
 
-    <h6>PhD</h6>
-    <!--<p>
+    <!-- <h6>PhD</h6>
+    <p>
       We are looking for a highly motivated and talented PhD student to join the newly created Translational Spatial Profiling Center at the Heidelberg University Hospital, managed by the Institute for Computational Biomedicine and the Institute for Pathology.
     </p>
     <p>
@@ -317,10 +357,10 @@
       <li>Have a strong interest and/or knowledge about histo(patho)logy and cancer biology.</li>
       <li>Have experience programming in R or Python.</li>
       <li>Have good English communication skills.</li>
-    </ul> -->
+    </ul> 
   
     We currently have an open PhD position in modeling and integration of multilayered omics data with microscopy/pathology imaging data with focus on patients with heart failure with preserved ejection fraction. For more information see the post on <a href="https://jobrxiv.org/job/heidelberg-university-and-heidelberg-university-hospital-27778-phd-postdoc-in-spatial-omics-for-cardiology/">jobRxiv</a>.
-
+    -->
     <hr> 
 
     <!-- <h6>Postdoc</h6>
@@ -335,9 +375,9 @@
       <li>Have either a degree in computer science, engineering sciences, physics or mathematics, or a degree in biological sciences or medicine with previous experience in computational work.</li>
       <li>Have experience programming in R or Python.</li>
       <li>Interest in spatial omics and cancer biology.</li>
-    </ul>  -->
+    </ul> 
     
-    <hr>
+    <hr> -->
 
     For all PhD and Postdoc postions we offer:
     <ul>
@@ -358,8 +398,14 @@
 <footer class = "container">
   <div class="row" style="text-align: center;">
     <hr>
-    &copy; 2024 Tanevski Lab
+    <p>&copy; 2024 - <span id="year"></span> Tanevski Lab | Computational Biomedical Discovery</p>
   </div>
 </footer>
+
+  <!-- Dynamic Year for Footer -->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
 </body>
 </html>
