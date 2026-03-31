@@ -1,4 +1,6 @@
 User-agent: *
-Allow: /
+Allow: /$
+Allow: /index.html$
+Disallow: /*.html$
 
 Sitemap: https://tanevskilab.org/sitemap.xml
