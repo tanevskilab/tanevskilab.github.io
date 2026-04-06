@@ -6,7 +6,7 @@
   <meta name="description"
     content="Tanevski Lab - Computational biomedical discovery. Machine learning / Artificial intelligence methods for analysis of spatial omics data in Heidelberg" />
   <meta name="keywords"
-    content="spatial, single-cell, omics, machine learning, ML, optimization , artificial intelligence, AI, Heidelberg, Germany, University, Hospital, proteomics, transcriptomics, metabolomics, translational, computational, biology, bioinformatics, biomedicine, medicine" />
+    content="spatial, single-cell, omics, machine learning, ML, optimization , artificial intelligence, AI, Heidelberg, Germany, University, Hospital, proteomics, transcriptomics, metabolomics, translational, computational, biology, bioinformatics, biomedicine, medicine, cell-cell communication, intercellular communication" />
   <title>Tanevski Lab | Computational biomedical discovery | Spatial omics | Heidelberg</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="Jovan Tanevski">
@@ -17,12 +17,15 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://tanevskilab.org">
   <meta property="og:image" content="https://tanevskilab.org/images/logo.png">
+  <meta property="og:site_name" content="Tanevski Lab">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:description"
     content="Explainable AI/ML for single-cell, spatial omics and computational biomedical discovery.">
+  <meta name="twitter:title" content="Tanevski Lab | Computational Biomedical Discovery">
   <meta name="twitter:image" content="https://tanevskilab.org/images/logo.png">
+  <meta name="twitter:site" content="@tanevski">
   <meta name="twitter:creator" content="@tanevski">
 
   <!-- Canonical URL -->
@@ -48,30 +51,103 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "ResearchOrganization",
-    "name": "Tanevski Lab",
-    "alternateName": "Computational Biomedical Discovery Lab",
-    "url": "https://tanevskilab.org",
-    "logo": "https://tanevskilab.org/images/logo.png",
-    "description": "AI/ML methods for single-cell and spatial omics data analysis at Heidelberg University.",
-    "email": "contact@tanevskilab.org",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Im Neuenheimer Feld 130.3",
-      "addressLocality": "Heidelberg",
-      "postalCode": "69120",
-      "addressCountry": "DE"
-    },
-    "parentOrganization": {
-      "@type": "Organization",
-      "name": "Heidelberg University and Heidelberg University Hospital"
-    },
-    "sameAs": [
-      "https://github.com/tanevskilab",
-      "https://linkedin.com/in/tanevski",
-      "https://scholar.google.com/citations?user=F47ynYgAAAAJ",
-      "https://bsky.app/profile/tanevski.bsky.social",
-      "https://x.com/tanevski"
+    "@graph": [
+      {
+        "@type": "ResearchOrganization",
+        "@id": "https://tanevskilab.org/#organization",
+        "name": "Tanevski Lab",
+        "alternateName": "Computational Biomedical Discovery Lab",
+        "url": "https://tanevskilab.org",
+        "logo": "https://tanevskilab.org/images/logo.png",
+        "description": "AI/ML methods for single-cell and spatial omics data analysis at Heidelberg University.",
+        "email": "contact@tanevskilab.org",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Im Neuenheimer Feld 130.3",
+          "addressLocality": "Heidelberg",
+          "postalCode": "69120",
+          "addressCountry": "DE"
+        },
+        "parentOrganization": {
+          "@type": "Organization",
+          "name": "Heidelberg University and Heidelberg University Hospital"
+        },
+        "member": { "@id": "https://tanevskilab.org/#jovan-tanevski" },
+        "sameAs": [
+          "https://github.com/tanevskilab",
+          "https://linkedin.com/in/tanevski",
+          "https://scholar.google.com/citations?user=F47ynYgAAAAJ",
+          "https://bsky.app/profile/tanevski.bsky.social",
+          "https://x.com/tanevski"
+        ]
+      },
+      {
+        "@type": "Person",
+        "@id": "https://tanevskilab.org/#jovan-tanevski",
+        "name": "Jovan Tanevski",
+        "jobTitle": "Group Leader",
+        "affiliation": { "@id": "https://tanevskilab.org/#organization" },
+        "sameAs": [
+          "https://x.com/tanevski",
+          "https://bsky.app/profile/tanevski.bsky.social",
+          "https://linkedin.com/in/tanevski",
+          "https://scholar.google.com/citations?user=F47ynYgAAAAJ"
+        ]
+      },
+      {
+        "@type": "SoftwareSourceCode",
+        "name": "MISTy",
+        "description": "Multiview Intercellular SpaTial modeling framework. Explainable ML for learning intra- and intercellular spatial relationships from single-cell, highly multiplexed, spatially resolved data.",
+        "programmingLanguage": "R",
+        "codeRepository": "https://github.com/jtanevski/mistyR",
+        "author": { "@id": "https://tanevskilab.org/#organization" },
+        "citation": "https://doi.org/10.1186/s13059-022-02663-5"
+      },
+      {
+        "@type": "SoftwareSourceCode",
+        "name": "Kasumi",
+        "description": "Identification of spatially localized neighborhoods of intra- and intercellular relationships persistent across samples. Learns compressed, explainable representations of spatial omics samples.",
+        "programmingLanguage": "R",
+        "codeRepository": "https://github.com/jtanevski/kasumi",
+        "author": { "@id": "https://tanevskilab.org/#organization" },
+        "citation": "https://doi.org/10.1038/s41467-025-59448-0"
+      },
+      {
+        "@type": "SoftwareSourceCode",
+        "name": "DOT",
+        "description": "Cell feature transfer from scRNA-seq to spatial omics via multi-objective Frank-Wolfe optimization. Transfers cell types, states, gene expression, and pathway activities.",
+        "programmingLanguage": ["R", "Python"],
+        "codeRepository": "https://saezlab.github.io/DOT/",
+        "author": { "@id": "https://tanevskilab.org/#organization" },
+        "citation": "https://doi.org/10.1038/s41467-024-48868-z"
+      },
+      {
+        "@type": "SoftwareSourceCode",
+        "name": "TOAST",
+        "description": "Topography-aware Optimal Alignment of Spatially-resolved Tissues. Spatially-aware Fused Gromov-Wasserstein framework for intra-, intersample and temporal alignment of spatial omics data.",
+        "programmingLanguage": "Python",
+        "codeRepository": "https://github.com/cecca46/TOAST",
+        "author": { "@id": "https://tanevskilab.org/#organization" },
+        "citation": "https://doi.org/10.1101/2025.04.15.648894"
+      },
+      {
+        "@type": "SoftwareSourceCode",
+        "name": "ContextFlow",
+        "description": "Context-aware flow matching framework for inferring structural tissue dynamics from longitudinal spatially resolved omics data, integrating local tissue organization and ligand-receptor cell-cell communication patterns.",
+        "programmingLanguage": "Python",
+        "codeRepository": "https://github.com/santanurathod/ContextFlow",
+        "author": { "@id": "https://tanevskilab.org/#organization" },
+        "citation": "https://doi.org/10.48550/arXiv.2510.02952"
+      },
+      {
+        "@type": "SoftwareSourceCode",
+        "name": "SpaCEy",
+        "description": "Explainable graph neural network uncovering organizational tissue patterns predictive of clinical outcomes by modeling tissues as spatial graphs of cells and their interactions.",
+        "programmingLanguage": "Python",
+        "codeRepository": "https://github.com/saezlab/SpaCEy",
+        "author": { "@id": "https://tanevskilab.org/#organization" },
+        "citation": "https://doi.org/10.64898/2025.12.12.693857"
+      }
     ]
   }
   </script>
@@ -427,10 +503,11 @@
               programmed macrophage cell death govern outcome of cutaneous wound healing</a>. <em>bioRxiv</em>:
               2026.03.19.712831 (2026).
           </li>
-          <li>Fallegger, R., Gomez-Ochoa, S. A., Becker, M., Puelles, V. G., Hoppe, J., et al. <a
-              href="https://doi.org/10.64898/2026.03.05.26347522" target="_blank" rel="noopener noreferrer">Shared
-              multicellular injury programs of acute and chronic kidney disease enable mechanistic patient
-              stratification</a>. <em>medRxiv</em>:2026.03.05.26347522 (2026).
+          <li>Fallegger, R., Gomez-Ochoa, S., Boys, C., Ramirez Flores, R., Tanevski, J., et al. <a
+              href="https://doi.org/10.64898/2026.03.05.26347522" target="_blank"
+              rel="noopener noreferrer">Shared multicellular injury programs of acute and
+              chronic kidney disease enable mechanistic patient stratification</a>.
+              <em>medRxiv</em>:2026.03.05.26347522 (2026).
           </li>
           <li>Rifaioglu, A. S., Ervin, E. H., Sarigun, A., Germen, D., Bodenmiller, B., et al. <a
               href="https://doi.org/10.64898/2025.12.12.693857" target="_blank" rel="noopener noreferrer">SpaCEy:
@@ -452,16 +529,11 @@
               Spatial Drivers of Unresolved Injury and Functional Decline in the Human Kidney</a>.
               <em>bioRxiv</em>:2025.09.26.678707 (2025).
           </li>
-          <li>Schäfer, P. S. L., Zimmermann, L., Burmedi, P. L., Walfisch, A., Goldenberg, N., et al. <a
-              href="https://doi.org/10.1101/2025.09.08.674797" target="_blank" rel="noopener noreferrer">ParTIpy: A
-              Scalable Framework for Archetypal Analysis and Pareto Task Inference</a>.
-              <em>bioRxiv</em>:2025.09.08.674797 (2025).
-          </li>
         </ul>
 
         <h6>Journal publications</h6>
         <ul>
-          <li>Ceccarelli, F., Liò, P., Saez-Rodriguez, J., Holden, S., Tanevski, J.. <a
+          <li>Ceccarelli, F., Liò, P., Saez-Rodriguez, J., Holden, S., Tanevski, J. <a
               href="https://doi.org/10.1016/j.crmeth.2026.101373" target="_blank"
               rel="noopener noreferrer">Topography-aware optimal transport for alignment
               of spatial omics data</a>. <em>Cell Reports Methods</em>, 101373 (2026).
@@ -470,6 +542,11 @@
               href="https://doi.org/10.1101/2025.03.31.646289" target="_blank" rel="noopener noreferrer">Comparison and
               Optimization of Cellular Neighbor Preference Methods for Quantitative Tissue Analysis</a>.
               <em>Nature Communications</em> (2026).
+          </li>
+          <li>Schäfer, P. S. L., Zimmermann, L., Burmedi, P. L., Walfisch, A., Goldenberg, N., et al. <a
+              href="https://doi.org/10.1101/2025.09.08.674797" target="_blank" rel="noopener noreferrer">ParTIpy: A
+              Scalable Framework for Archetypal Analysis and Pareto Task Inference</a>.
+              <em>Molecular Systems Biology</em> (2026).
           </li>
           <li>Yang, Y., Guo, J., Zhu, Y., Yue, J., Zhu, J., et al. <a
               href="https://doi.org/10.2352/EI.2026.38.11.HPCI-198" target="_blank" rel="noopener noreferrer">HistoWAS:

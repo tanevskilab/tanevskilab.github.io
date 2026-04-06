@@ -1,0 +1,56 @@
+# Tanevski Lab
+
+> Tanevski Lab is a computational biomedical discovery group at Heidelberg University and Heidelberg University Hospital. The lab develops interpretable, scalable machine learning and optimization approaches for single-cell and spatial omics data to turn tissue complexity into mechanistic insight and clinical prediction.
+
+## Research
+
+The lab works at the intersection of AI and biomedicine to understand the principles governing tissue organization and plasticity. Core research directions:
+
+- Formalizing spatial tissue organization by learning representations that integrate single-cell, spatial multiomics, and imaging data into a unified view of tissue architecture
+- Modeling tissue plasticity as a structured dynamical process to reconstruct how spatial programs evolve across disease stages and under therapeutic pressure
+- Linking spatial organization to clinical outcomes via explainable frameworks that establish the molecular architecture of tissue as predictive of disease progression and therapeutic response
+
+Affiliated with the Institute for Computational Biomedicine, the Translational Spatial Profiling Center, and the Interdisciplinary Center for Scientific Computing at Heidelberg University.
+
+## Tools
+
+- [MISTy](https://github.com/jtanevski/mistyR): Multiview Intercellular SpaTial modeling framework. Explainable ML for learning intra- and intercellular spatial relationships from highly multiplexed spatially resolved data. R package. Publication: https://doi.org/10.1186/s13059-022-02663-5
+- [Kasumi](https://github.com/jtanevski/kasumi): Identification of spatially localized neighborhoods of intra- and intercellular relationships persistent across samples. Learns compressed, explainable representations of spatial omics samples. R package. Publication: https://doi.org/10.1038/s41467-025-59448-0
+- [DOT](https://saezlab.github.io/DOT/): Cell feature transfer from scRNA-seq to spatial omics via multi-objective Frank-Wolfe optimization. Available in R and Python. Publication: https://doi.org/10.1038/s41467-024-48868-z
+- [TOAST](https://github.com/cecca46/TOAST): Topography-aware Optimal Alignment of Spatially-resolved Tissues using Fused Gromov-Wasserstein. Python. Publication: https://doi.org/10.1101/2025.04.15.648894
+- [ContextFlow](https://github.com/santanurathod/ContextFlow): Context-aware flow matching for inferring structural tissue dynamics from longitudinal spatially resolved omics data, integrating ligand-receptor cell-cell communication patterns. Python. Publication: https://doi.org/10.48550/arXiv.2510.02952
+- [SpaCEy](https://github.com/saezlab/SpaCEy): Explainable graph neural network uncovering organizational tissue patterns predictive of clinical outcomes by modeling tissues as spatial graphs of cells and their interactions. Python. Publication: https://doi.org/10.64898/2025.12.12.693857
+
+## Key Publications
+
+- [Explainable multiview framework for dissecting spatial relationships from highly multiplexed data](https://doi.org/10.1186/s13059-022-02663-5): Introduces MISTy. Genome Biology 23, 97 (2022).
+- [Learning tissue representation by identification of persistent local patterns in spatial omics data](https://doi.org/10.1038/s41467-025-59448-0): Introduces Kasumi. Nature Communications 16, 4071 (2025).
+- [DOT: a flexible multi-objective optimization framework for transferring features across single-cell and spatial omics](https://doi.org/10.1038/s41467-024-48868-z): Introduces DOT. Nature Communications 15, 4994 (2024).
+- [Topography-aware optimal transport for alignment of spatial omics data](https://doi.org/10.1016/j.crmeth.2026.101373): Introduces TOAST. Cell Reports Methods (2026).
+- [ContextFlow: Context-Aware Flow Matching For Trajectory Inference From Spatial Omics Data](https://doi.org/10.48550/arXiv.2510.02952): Introduces ContextFlow. arXiv:2510.02952 (2025).
+- [SpaCEy: Discovery of Functional Spatial Tissue Patterns by Association with Clinical Features Using Explainable Graph Neural Networks](https://doi.org/10.64898/2025.12.12.693857): Introduces SpaCEy. bioRxiv (2025).
+- [Pathology-oriented multiplexing enables integrative disease mapping](https://doi.org/10.1038/s41586-025-09225-2): Nature 644, 516–526 (2025).
+- [LIANA+ provides an all-in-one framework for cell–cell communication inference](https://doi.org/10.1038/s41556-024-01469-w): Nature Cell Biology 26, 1613–1622 (2024).
+
+## People
+
+- Jovan Tanevski (Group Leader) — computational biomedical discovery, spatial omics ML, explainable AI, cell-cell communication
+- Chang Lu (Postdoc)
+- Yunfan Bai (Postdoc)
+- Sebastian Gonzalez Tirado (PhD student)
+- Aroj Hada (PhD student)
+- Leoni Zimmermann (PhD student)
+- Alessandro Greco (Scientific programmer)
+- Philipp Schäfer (Associated PhD student)
+- Robin Fallegger (Associated PhD student)
+- Chiara Schiller (Associated PhD student)
+- Francesco Ceccarelli (Associated PhD student)
+
+## Contact
+
+- Email: contact@tanevskilab.org
+- Address: Institute for Computational Biomedicine, Im Neuenheimer Feld 130.3, 69120 Heidelberg, Germany
+- GitHub: https://github.com/tanevskilab
+- Google Scholar: https://scholar.google.com/citations?user=F47ynYgAAAAJ
+- Bluesky: https://bsky.app/profile/tanevski.bsky.social
+- X/Twitter: https://x.com/tanevski
