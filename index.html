@@ -59,7 +59,7 @@
         "alternateName": "Computational Biomedical Discovery Lab",
         "url": "https://tanevskilab.org",
         "logo": "https://tanevskilab.org/images/logo.png",
-        "description": "AI/ML methods for single-cell and spatial omics data analysis at Heidelberg University.",
+        "description": "Research group developing interpretable, scalable machine learning and optimization methods for single-cell and spatial omics data, aimed at recovering the principles of tissue organization and plasticity and linking them to clinical outcomes.",
         "email": "contact@tanevskilab.org",
         "address": {
           "@type": "PostalAddress",
@@ -68,11 +68,24 @@
           "postalCode": "69120",
           "addressCountry": "DE"
         },
-        "parentOrganization": {
-          "@type": "Organization",
-          "name": "Heidelberg University and Heidelberg University Hospital"
-        },
+        "parentOrganization": { "@id": "https://www.medizinische-fakultaet-hd.uni-heidelberg.de/organisation/institute/institute-for-computational-biomedicine" },
         "member": { "@id": "https://tanevskilab.org/#jovan-tanevski" },
+        "founder": { "@id": "https://tanevskilab.org/#jovan-tanevski" },
+        "knowsAbout": [
+          "Spatial omics",
+          "Spatial transcriptomics",
+          "Spatial proteomics",
+          "Single-cell genomics",
+          "Explainable machine learning",
+          "Optimal transport",
+          "Graph neural networks",
+          "Representation learning",
+          "Tissue organization",
+          "Tissue plasticity",
+          "Cell-cell communication",
+          "Computational biomedicine",
+          "Computational pathology"
+        ],
         "funder": [
           { "@type": "Organization", "name": "Bruno und Helene Jöster Stiftung" },
           { "@type": "Organization", "name": "Carl Zeiss Stiftung", "url": "https://www.carl-zeiss-stiftung.de" },
@@ -81,7 +94,7 @@
         ],
         "sameAs": [
           "https://github.com/tanevskilab",
-          "https://linkedin.com/in/tanevski",
+          "https://www.linkedin.com/in/tanevski",
           "https://scholar.google.com/citations?user=F47ynYgAAAAJ",
           "https://bsky.app/profile/tanevski.bsky.social",
           "https://x.com/tanevski"
@@ -91,68 +104,230 @@
         "@type": "Person",
         "@id": "https://tanevskilab.org/#jovan-tanevski",
         "name": "Jovan Tanevski",
+        "givenName": "Jovan",
+        "familyName": "Tanevski",
         "jobTitle": "Group Leader",
-        "affiliation": { "@id": "https://tanevskilab.org/#organization" },
+        "url": "https://tanevskilab.org",
+        "image": "https://tanevskilab.org/images/people/jovan.jpg",
+        "description": "Group Leader at the Institute for Computational Biomedicine, Heidelberg University and Heidelberg University Hospital, and Head of the Computational Platform at the Translational Spatial Profiling Center. Develops interpretable machine learning and optimization methods for spatial omics.",
+        "identifier": {
+          "@type": "PropertyValue",
+          "propertyID": "ORCID",
+          "value": "0000-0001-7177-1003",
+          "url": "https://orcid.org/0000-0001-7177-1003"
+        },
+        "affiliation": [
+          { "@id": "https://www.medizinische-fakultaet-hd.uni-heidelberg.de/organisation/institute/institute-for-computational-biomedicine" },
+          { "@id": "https://www.tspc-hd.com" }
+        ],
+        "worksFor": { "@id": "https://www.medizinische-fakultaet-hd.uni-heidelberg.de/organisation/institute/institute-for-computational-biomedicine" },
+        "memberOf": [
+          { "@id": "https://tanevskilab.org/#organization" },
+          { "@id": "https://www.tspc-hd.com" },
+          { "@id": "https://ellis.eu" },
+          { "@id": "https://www.iwr.uni-heidelberg.de/en" }
+        ],
+        "knowsAbout": [
+          "Spatial omics",
+          "Spatial transcriptomics",
+          "Spatial proteomics",
+          "Single-cell genomics",
+          "Explainable machine learning",
+          "Interpretable machine learning",
+          "Optimal transport",
+          "Graph neural networks",
+          "Representation learning",
+          "Tissue organization",
+          "Tissue plasticity",
+          "Cell-cell communication",
+          "Computational biomedicine",
+          "Computational pathology"
+        ],
         "sameAs": [
-          "https://x.com/tanevski",
+          "https://orcid.org/0000-0001-7177-1003",
+          "https://scholar.google.com/citations?user=F47ynYgAAAAJ",
+          "https://github.com/jtanevski",
+          "https://www.linkedin.com/in/tanevski",
           "https://bsky.app/profile/tanevski.bsky.social",
-          "https://linkedin.com/in/tanevski",
-          "https://scholar.google.com/citations?user=F47ynYgAAAAJ"
+          "https://x.com/tanevski",
+          "https://www.researchgate.net/profile/Jovan-Tanevski-2",
+          "https://openreview.net/profile?id=~Jovan_Tanevski1"
         ]
       },
       {
-        "@type": "SoftwareSourceCode",
-        "name": "MISTy",
-        "description": "Multiview Intercellular SpaTial modeling framework. Explainable ML for learning intra- and intercellular spatial relationships from single-cell, highly multiplexed, spatially resolved data.",
-        "programmingLanguage": "R",
-        "codeRepository": "https://github.com/jtanevski/mistyR",
-        "author": { "@id": "https://tanevskilab.org/#organization" },
-        "citation": "https://doi.org/10.1186/s13059-022-02663-5"
+        "@type": "ResearchOrganization",
+        "@id": "https://www.medizinische-fakultaet-hd.uni-heidelberg.de/organisation/institute/institute-for-computational-biomedicine",
+        "name": "Institute for Computational Biomedicine",
+        "url": "https://www.medizinische-fakultaet-hd.uni-heidelberg.de/organisation/institute/institute-for-computational-biomedicine",
+        "parentOrganization": { "@id": "https://www.klinikum.uni-heidelberg.de/en" }
+      },
+      {
+        "@type": "ResearchOrganization",
+        "@id": "https://www.tspc-hd.com",
+        "name": "Translational Spatial Profiling Center",
+        "alternateName": "TSPC",
+        "url": "https://www.tspc-hd.com",
+        "parentOrganization": { "@id": "https://www.klinikum.uni-heidelberg.de/en" }
+      },
+      {
+        "@type": "ResearchOrganization",
+        "@id": "https://www.iwr.uni-heidelberg.de/en",
+        "name": "Interdisciplinary Center for Scientific Computing",
+        "alternateName": "IWR",
+        "url": "https://www.iwr.uni-heidelberg.de/en",
+        "sameAs": ["https://en.wikipedia.org/wiki/Interdisciplinary_Center_for_Scientific_Computing"],
+        "parentOrganization": { "@id": "https://www.uni-heidelberg.de/en" }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://ellis.eu",
+        "name": "ELLIS",
+        "alternateName": "European Laboratory for Learning and Intelligent Systems",
+        "url": "https://ellis.eu"
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://www.klinikum.uni-heidelberg.de/en",
+        "name": "Heidelberg University Hospital",
+        "alternateName": "Universitätsklinikum Heidelberg",
+        "url": "https://www.klinikum.uni-heidelberg.de/en",
+        "sameAs": [
+          "https://ror.org/013czdx64",
+          "https://www.wikidata.org/wiki/Q324206"
+        ],
+        "parentOrganization": { "@id": "https://www.uni-heidelberg.de/en" }
+      },
+      {
+        "@type": "CollegeOrUniversity",
+        "@id": "https://www.uni-heidelberg.de/en",
+        "name": "Heidelberg University",
+        "alternateName": "Ruprecht-Karls-Universität Heidelberg",
+        "url": "https://www.uni-heidelberg.de/en",
+        "sameAs": ["https://ror.org/038t36y30"]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://tanevskilab.org/#website",
+        "url": "https://tanevskilab.org",
+        "name": "Tanevski Lab",
+        "inLanguage": "en",
+        "publisher": { "@id": "https://tanevskilab.org/#organization" },
+        "about": { "@id": "https://tanevskilab.org/#organization" }
       },
       {
         "@type": "SoftwareSourceCode",
+        "@id": "https://tanevskilab.org/#misty",
+        "name": "MISTy",
+        "alternateName": "Multiview Intercellular SpaTial modeling framework",
+        "description": "Explainable machine learning framework for learning intra- and intercellular spatial relationships from single-cell, highly multiplexed, spatially resolved data using a configurable set of spatial and functional views.",
+        "programmingLanguage": "R",
+        "codeRepository": "https://github.com/saezlab/mistyR",
+        "applicationCategory": "Computational biology",
+        "keywords": "spatial omics, explainable machine learning, multiview learning, cell-cell communication",
+        "author": { "@id": "https://tanevskilab.org/#jovan-tanevski" },
+        "producer": { "@id": "https://tanevskilab.org/#organization" },
+        "citation": {
+          "@type": "ScholarlyArticle",
+          "name": "Explainable multiview framework for dissecting spatial relationships from highly multiplexed data",
+          "sameAs": "https://doi.org/10.1186/s13059-022-02663-5",
+          "isPartOf": { "@type": "Periodical", "name": "Genome Biology" },
+          "datePublished": "2022"
+        }
+      },
+      {
+        "@type": "SoftwareSourceCode",
+        "@id": "https://tanevskilab.org/#kasumi",
         "name": "Kasumi",
-        "description": "Identification of spatially localized neighborhoods of intra- and intercellular relationships persistent across samples. Learns compressed, explainable representations of spatial omics samples.",
+        "description": "Identification of spatially localized neighborhoods of intra- and intercellular relationships persistent across samples and conditions. Learns compressed, explainable representations of spatial omics samples for translational tasks.",
         "programmingLanguage": "R",
         "codeRepository": "https://github.com/jtanevski/kasumi",
-        "author": { "@id": "https://tanevskilab.org/#organization" },
-        "citation": "https://doi.org/10.1038/s41467-025-59448-0"
+        "applicationCategory": "Computational biology",
+        "keywords": "spatial omics, tissue representation, patient stratification, explainable machine learning",
+        "author": { "@id": "https://tanevskilab.org/#jovan-tanevski" },
+        "producer": { "@id": "https://tanevskilab.org/#organization" },
+        "citation": {
+          "@type": "ScholarlyArticle",
+          "name": "Learning tissue representation by identification of persistent local patterns in spatial omics data",
+          "sameAs": "https://doi.org/10.1038/s41467-025-59448-0",
+          "isPartOf": { "@type": "Periodical", "name": "Nature Communications" },
+          "datePublished": "2025-04-30"
+        }
       },
       {
         "@type": "SoftwareSourceCode",
+        "@id": "https://tanevskilab.org/#dot",
         "name": "DOT",
-        "description": "Cell feature transfer from scRNA-seq to spatial omics via multi-objective Frank-Wolfe optimization. Transfers cell types, states, gene expression, and pathway activities.",
+        "description": "Cell feature transfer from reference single-cell RNA-seq to spatial omics via multi-objective Frank-Wolfe optimization. Transfers cell types, states, gene expression and pathway activities.",
         "programmingLanguage": ["R", "Python"],
-        "codeRepository": "https://saezlab.github.io/DOT/",
-        "author": { "@id": "https://tanevskilab.org/#organization" },
-        "citation": "https://doi.org/10.1038/s41467-024-48868-z"
+        "codeRepository": "https://github.com/saezlab/DOT",
+        "url": "https://saezlab.github.io/DOT/",
+        "applicationCategory": "Computational biology",
+        "keywords": "spatial omics, optimal transport, deconvolution, single-cell RNA-seq",
+        "contributor": { "@id": "https://tanevskilab.org/#jovan-tanevski" },
+        "producer": { "@id": "https://tanevskilab.org/#organization" },
+        "citation": {
+          "@type": "ScholarlyArticle",
+          "name": "DOT: a flexible multi-objective optimization framework for transferring features across single-cell and spatial omics",
+          "sameAs": "https://doi.org/10.1038/s41467-024-48868-z",
+          "isPartOf": { "@type": "Periodical", "name": "Nature Communications" },
+          "datePublished": "2024"
+        }
       },
       {
         "@type": "SoftwareSourceCode",
+        "@id": "https://tanevskilab.org/#toast",
         "name": "TOAST",
-        "description": "Topography-aware Optimal Alignment of Spatially-resolved Tissues. Spatially-aware Fused Gromov-Wasserstein framework for intra-, intersample and temporal alignment of spatial omics data.",
+        "alternateName": "Topography-aware Optimal Alignment of Spatially-resolved Tissues",
+        "description": "Spatially aware Fused Gromov-Wasserstein framework for intra-, intersample and temporal alignment of spatial omics data, incorporating spatial constraints into the optimal transport objective.",
         "programmingLanguage": "Python",
         "codeRepository": "https://github.com/cecca46/TOAST",
-        "author": { "@id": "https://tanevskilab.org/#organization" },
-        "citation": "https://doi.org/10.1101/2025.04.15.648894"
+        "applicationCategory": "Computational biology",
+        "keywords": "spatial omics, optimal transport, tissue alignment, Gromov-Wasserstein",
+        "contributor": { "@id": "https://tanevskilab.org/#jovan-tanevski" },
+        "producer": { "@id": "https://tanevskilab.org/#organization" },
+        "citation": {
+          "@type": "ScholarlyArticle",
+          "name": "Topography-aware optimal transport for alignment of spatial omics data",
+          "sameAs": "https://doi.org/10.1016/j.crmeth.2026.101373",
+          "isPartOf": { "@type": "Periodical", "name": "Cell Reports Methods" },
+          "datePublished": "2026"
+        }
       },
       {
         "@type": "SoftwareSourceCode",
+        "@id": "https://tanevskilab.org/#contextflow",
         "name": "ContextFlow",
-        "description": "Context-aware flow matching framework for inferring structural tissue dynamics from longitudinal spatially resolved omics data, integrating local tissue organization and ligand-receptor cell-cell communication patterns.",
+        "description": "Context-aware flow matching framework for inferring structural tissue dynamics from longitudinal spatially resolved omics data, integrating local tissue organization and ligand-receptor communication patterns.",
         "programmingLanguage": "Python",
         "codeRepository": "https://github.com/santanurathod/ContextFlow",
-        "author": { "@id": "https://tanevskilab.org/#organization" },
-        "citation": "https://doi.org/10.48550/arXiv.2510.02952"
+        "applicationCategory": "Computational biology",
+        "keywords": "spatial omics, flow matching, trajectory inference, optimal transport, tissue dynamics",
+        "contributor": { "@id": "https://tanevskilab.org/#jovan-tanevski" },
+        "producer": { "@id": "https://tanevskilab.org/#organization" },
+        "citation": {
+          "@type": "ScholarlyArticle",
+          "name": "ContextFlow: Context-Aware Flow Matching For Trajectory Inference From Spatial Omics Data",
+          "sameAs": "https://doi.org/10.48550/arXiv.2510.02952",
+          "datePublished": "2025"
+        }
       },
       {
         "@type": "SoftwareSourceCode",
+        "@id": "https://tanevskilab.org/#spacey",
         "name": "SpaCEy",
         "description": "Explainable graph neural network uncovering organizational tissue patterns predictive of clinical outcomes by modeling tissues as spatial graphs of cells and their interactions.",
         "programmingLanguage": "Python",
         "codeRepository": "https://github.com/saezlab/SpaCEy",
-        "author": { "@id": "https://tanevskilab.org/#organization" },
-        "citation": "https://doi.org/10.64898/2025.12.12.693857"
+        "applicationCategory": "Computational biology",
+        "keywords": "spatial omics, graph neural networks, explainable AI, patient stratification, survival prediction",
+        "contributor": { "@id": "https://tanevskilab.org/#jovan-tanevski" },
+        "producer": { "@id": "https://tanevskilab.org/#organization" },
+        "citation": {
+          "@type": "ScholarlyArticle",
+          "name": "SpaCEy: Discovery of Functional Spatial Tissue Patterns by Association with Clinical Features Using Explainable Graph Neural Networks",
+          "sameAs": "https://doi.org/10.64898/2025.12.12.693857",
+          "datePublished": "2025"
+        }
       }
     ]
   }
@@ -204,6 +379,8 @@
             class="fab fa-bluesky"></i></a>
         <a href="https://x.com/tanevski" aria-label="X" rel="noopener noreferrer me"><i
             class="fab fa-x-twitter"></i></a>
+       <a href="https://orcid.org/0000-0001-7177-1003" aria-label="ORCID iD 0000-0001-7177-1003"
+      rel="noopener noreferrer me"><i class="fab fa-orcid"></i></a>
       </div>
       <div class="affiliation-logos">
         <a href="https://www.medizinische-fakultaet-hd.uni-heidelberg.de/en"
@@ -239,7 +416,7 @@
         <p>
           <b>Our group at the Heidelberg University and Heidelberg University Hospital focuses on problem driven
             development of AI/ML approaches to data exploration, hypothesis generation and computational scientific
-            discovery to facilitate translational biomedicine.</b>
+            discovery to facilitate translational biomedicine from imaging, single-cell and spatial omics data.</b>
         </p>
         <p>
           We are affiliated with the <a
@@ -282,7 +459,7 @@
 
     <section id="people" class="container">
       <h5>People</h5>
-      <div class="row boxin">
+      <div class="row boxin" id="jovan-tanevski">
         <p><b>Group Leader</b></p>
         <div style="text-align: center;">
           <img class="round" src="images/people/jovan.jpg" style="max-width: 150px; object-position: 50% 10%;" loading="lazy">
@@ -365,7 +542,7 @@
 
 
         <div class="row">
-          <div class="two columns">
+          <div class="two columns" id="misty">
             <img style="max-width: 120px; text-align: center;" src="images/tools/misty_badge.png" loading="lazy">
             <p>
               <b>MISTy</b>
@@ -391,7 +568,7 @@
             </p>
           </div>
 
-          <div class="two columns">
+          <div class="two columns" id="kasumi">
             <img style="max-width: 120px; text-align: center;" src="images/tools/kasumi_badge.png" loading="lazy">
             <p>
               <b>Kasumi</b>
@@ -418,7 +595,7 @@
         <hr>
 
         <div class="row">
-          <div class="two columns">
+          <div class="two columns" id="dot">
             <img style="max-width: 120px; text-align: center;" src="images/tools/DOT_icon.png" loading="lazy">
             <p>
               <b>DOT</b>
@@ -448,7 +625,7 @@
           </div>
 
 
-          <div class="two columns">
+          <div class="two columns" id="toast">
             <img style="max-width: 120px; text-align: center;" src="images/tools/TOAST_icon.png" loading="lazy">
             <p>
               <b>TOAST</b>
@@ -476,7 +653,7 @@
         <hr>
 
         <div class="row">
-          <div class="two columns">
+          <div class="two columns" id="contextflow">
             <img style="max-width: 150px; text-align: center;" src="images/tools/cf_icon.png" loading="lazy">
             <p>
               <b>ContextFlow</b>
@@ -498,7 +675,7 @@
               spatiotemporal dynamics.
           </div>
 
-          <div class="two columns">
+          <div class="two columns" id="spacey">
             <img style="max-width: 130px; text-align: center;" src="images/tools/spacey_icon.png" loading="lazy">
             <p>
               <b>SpaCEy</b>
