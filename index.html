@@ -4,16 +4,16 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-    content="Tanevski Lab - Computational biomedical discovery. Machine learning / Artificial intelligence methods for analysis of spatial omics data in Heidelberg" />
+    content="Machine learning and optimization methods for spatial omics. We study how tissue organization shapes cell state, disease progression and response to therapy, from single-cell, spatial and imaging data. Heidelberg University and Heidelberg University Hospital." />
   <meta name="keywords"
-    content="spatial, single-cell, omics, machine learning, ML, optimization , artificial intelligence, AI, Heidelberg, Germany, University, Hospital, proteomics, transcriptomics, metabolomics, translational, computational, biology, bioinformatics, biomedicine, medicine, cell-cell communication, intercellular communication" />
-  <title>Tanevski Lab | Computational biomedical discovery | Spatial omics | Heidelberg</title>
+    content="spatial, single-cell, omics, machine learning, ML, optimization , artificial intelligence, AI, Heidelberg, Germany, University, Hospital, proteomics, transcriptomics, metabolomics, translational, computational, biology, tissue organization, spatial biology, graph neural networks, optimal transport, flow matching, bioinformatics, biomedicine, medicine, cell-cell communication, intercellular communication" />
+  <title>Tanevski Lab | Machine learning | Spatial tissue organization | Heidelberg</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="Jovan Tanevski">
 
   <!-- OpenGraph / Social Meta -->
-  <meta property="og:title" content="Tanevski Lab | Computational Biomedical Discovery | Heidelberg">
-  <meta property="og:description" content="AI/ML methods for single-cell and spatial omics data analysis.">
+  <meta property="og:title" content="Tanevski Lab | Machine learning | Spatial tissue organization | Heidelberg">
+  <meta property="og:description" content="How tissue organization shapes cell state, disease progression and response to therapy. Interpretable machine learning for spatial omics.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.tanevskilab.org">
   <meta property="og:image" content="https://www.tanevskilab.org/images/logo.png">
@@ -22,8 +22,8 @@
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:description"
-    content="Explainable AI/ML for single-cell, spatial omics and computational biomedical discovery.">
-  <meta name="twitter:title" content="Tanevski Lab | Computational Biomedical Discovery">
+    content="How tissue organization shapes cell state, disease progression and response to therapy. Interpretable machine learning for spatial omics.">
+  <meta name="twitter:title" content="Tanevski Lab | Machine learning | Spatial tissue organization">
   <meta name="twitter:image" content="https://www.tanevskilab.org/images/logo.png">
   <meta name="twitter:site" content="@tanevski">
   <meta name="twitter:creator" content="@tanevski">
@@ -59,7 +59,7 @@
         "alternateName": "Computational Biomedical Discovery Lab",
         "url": "https://www.tanevskilab.org",
         "logo": "https://www.tanevskilab.org/images/logo.png",
-        "description": "Research group developing interpretable, scalable machine learning and optimization methods for single-cell and spatial omics data, aimed at recovering the principles of tissue organization and plasticity and linking them to clinical outcomes.",
+        "description": "Machine learning and optimization methods for spatial omics. We study how tissue organization shapes cell state, disease progression and response to therapy, from single-cell, spatial and imaging data. Heidelberg University and Heidelberg University Hospital.",
         "email": "contact@tanevskilab.org",
         "address": {
           "@type": "PostalAddress",
@@ -84,7 +84,8 @@
           "Tissue plasticity",
           "Cell-cell communication",
           "Computational biomedicine",
-          "Computational pathology"
+          "Computational pathology",
+          "Flow matching"
         ],
         "funder": [
           { "@type": "Organization", "name": "Bruno und Helene Jöster Stiftung" },
@@ -141,7 +142,8 @@
           "Tissue plasticity",
           "Cell-cell communication",
           "Computational biomedicine",
-          "Computational pathology"
+          "Computational pathology",
+          "Flow matching"
         ],
         "sameAs": [
           "https://orcid.org/0000-0001-7177-1003",
@@ -414,45 +416,34 @@
       <h5>Research</h5>
       <div class="row boxin">
         <p>
-          <b>Our group at the Heidelberg University and Heidelberg University Hospital focuses on problem driven
-            development of AI/ML approaches to data exploration, hypothesis generation and computational scientific
-            discovery to facilitate translational biomedicine from imaging, single-cell and spatial omics data.</b>
+          <strong>We study how the spatial organization of tissue shapes cell state, disease progression and response to therapy. We develop interpretable AI/ML and optimization methods that turn imaging, single-cell and spatial omics data into mechanistic hypotheses and clinical prediction.</strong>
         </p>
         <p>
           We are affiliated with the <a
             href="https://www.medizinische-fakultaet-hd.uni-heidelberg.de/organisation/institute/institute-for-computational-biomedicine"
             target="_blank" rel="noopener noreferrer">Institute for Computational Biomedicine</a> and the <a
             href="https://www.tspc-hd.com" target="_blank" rel="noopener noreferrer">Translational Spatial Profiling
-            Center</a> at the Heidelberg University and Heidelberg University Hospital.
-        </p>
-        <p>
-          We are members of <a href="https://ellis.eu/" target="_blank" rel="noopener noreferrer">ELLIS (European
+            Center</a> at Heidelberg University and Heidelberg University Hospital. We are members of <a href="https://ellis.eu/" target="_blank" rel="noopener noreferrer">ELLIS (European
             Laboratory for Learning and Intelligent Systems)</a>, the <a href="https://www.iwr.uni-heidelberg.de/en"
             target="_blank" rel="noopener noreferrer">Interdisciplinary
             center for scientific computing</a>, and contribute to the <a
-            href="https://www.mlai.uni-heidelberg.de/en">Scientific Machine Learning</a> initiative at the Heidelberg
+            href="https://www.mlai.uni-heidelberg.de/en">Scientific Machine Learning</a> initiative at Heidelberg
           University.
         </p>
         <p>
-            We work at the intersection of AI and biomedicine to address a fundamental challenge in biology and medicine: <b>understanding the principles governing tissue organization and plasticity</b>. We develop interpretable, scalable machine learning and optimization approaches that turn the complexity of single-cell and spatial omics data into mechanistic insight and clinical prediction.
+          We work at the intersection of AI and biomedicine to address a fundamental challenge in biology and medicine: <strong>understanding the principles governing tissue organization and plasticity</strong>. We study how the spatial organization of tissue shapes cell state, disease progression and response to therapy. The measurements are single-cell resolved and spatially structured, the labels sit at the level of the sample or the patient, and the organization itself is unannotated. We therefore treat these as problems of learning structured representations under weak supervision on geometric data, and we constrain the models to remain readable, since their output is a hypothesis that has to survive testing at the bench or in the clinic.
         </p>
         <ul>
-          <li>
-            We <b>formalize spatial tissue organization</b> by learning representations that integrate single-cell, spatial multiomics, and imaging data into a unified view of tissue architecture, establishing that the spatial arrangement of cells encodes disease state in ways that are structured, persistent, and clinically consequential.
-          </li>
-          <li>
-            We model <b>tissue plasticity as a structured dynamical process</b>, reconstructing how spatial programs evolve across disease stages and under therapeutic pressure to generate mechanistic hypotheses about the principles of adaptation, immune evasion, and resistance.
-          </li>
-          <li>
-            We <b>link spatial organization to clinical outcomes</b> by integrating molecular, spatial, and imaging layers into explainable frameworks that establish the molecular architecture of tissue as predictive of disease progression and therapeutic response, toward translation into clinical practice.
-          </li>
+          <li><strong>Cell state depends on tissue context.</strong> The molecular state of a cell is predictable in part from its surroundings, and the contribution of context can be separated from the contribution of the cell itself. We build multiview and graph-based models that keep this decomposition explicit rather than absorbing it into a single latent space, across transcript, protein and imaging modalities.</li>
+
+          <li><strong>Contextual programs are local and persistent.</strong> Patterns of intra- and intercellular relationship recur at consistent spatial scales across samples and conditions, which makes them learnable from sample-level labels without cell-level annotation. We develop compressed representations that preserve this locality, so that what the model used remains recoverable.</li>
+
+          <li><strong>Tissue organization changes in structured ways.</strong> Spatial programs are reconfigured across disease stages and under therapeutic pressure, and those trajectories are constrained rather than arbitrary. We formulate this as an alignment and transport problem over tissue geometry, to reconstruct how organization evolves and to generate hypotheses about adaptation, immune evasion and resistance.</li>
+
+          <li><strong>Tissue geometry carries clinical signal beyond molecular composition.</strong> Spatial arrangement predicts progression and therapeutic response where composition alone does not. We build explainable models that expose which spatial patterns drive a given prediction and distil them into compact, testable descriptions of tissue for patient stratification.</li>
         </ul>
         <p>
-          We value collaborations with clinical, experimental biology groups and groups working on the development of
-          novel methods for the acquisition of single-cell spatial omics data. We welcome synergistic collaborations
-          with
-          computational groups towards the construction of more robust theoretical and computational frameworks for the
-          analysis of all aspects of biomedical data and beyond.
+          We value collaborations with clinical, experimental biology groups and groups working on the development of novel methods for the acquisition of single-cell spatial omics data. We welcome synergistic collaborations with computational groups towards the construction of more robust theoretical and computational frameworks for the analysis of all aspects of biomedical data and beyond.
         </p>
       </div>
     </section>
