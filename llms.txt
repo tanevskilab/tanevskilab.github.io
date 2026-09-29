@@ -1,56 +1,96 @@
 # Tanevski Lab
 
-> Tanevski Lab is a computational biomedical discovery group at Heidelberg University and Heidelberg University Hospital. The lab develops interpretable, scalable machine learning and optimization approaches for single-cell and spatial omics data to turn tissue complexity into mechanistic insight and clinical prediction.
+> Tanevski Lab is a computational biomedical discovery group at the Institute for Computational Biomedicine, Heidelberg University and Heidelberg University Hospital. The lab studies how the spatial organization of tissue shapes cell state, disease progression and response to therapy, and develops interpretable AI/ML and optimization methods that turn imaging, single-cell and spatial omics data into mechanistic hypotheses and clinical prediction.
+
+Website: https://www.tanevskilab.org
 
 ## Research
 
-The lab works at the intersection of AI and biomedicine to understand the principles governing tissue organization and plasticity. Core research directions:
+The lab works at the intersection of AI and biomedicine to understand the principles governing tissue organization and plasticity. The measurements are single-cell resolved and spatially structured, the labels sit at the level of the sample or the patient, and the organization itself is unannotated. The lab therefore treats these as problems of learning structured representations under weak supervision on geometric data, and constrains the models to remain readable, since their output is a hypothesis that has to survive testing at the bench or in the clinic.
 
-- Formalizing spatial tissue organization by learning representations that integrate single-cell, spatial multiomics, and imaging data into a unified view of tissue architecture
-- Modeling tissue plasticity as a structured dynamical process to reconstruct how spatial programs evolve across disease stages and under therapeutic pressure
-- Linking spatial organization to clinical outcomes via explainable frameworks that establish the molecular architecture of tissue as predictive of disease progression and therapeutic response
+Core research directions:
 
-Affiliated with the Institute for Computational Biomedicine, the Translational Spatial Profiling Center, and the Interdisciplinary Center for Scientific Computing at Heidelberg University.
+- Cell state depends on tissue context. Multiview and graph-based models that separate the contribution of the surrounding tissue from the contribution of the cell itself, across transcript, protein and imaging modalities.
+- Contextual programs are local and persistent. Compressed representations of intra- and intercellular relationships that recur at consistent spatial scales across samples and conditions, learnable from sample-level labels without cell-level annotation.
+- Tissue organization changes in structured ways. Alignment and transport over tissue geometry to reconstruct how spatial programs are reconfigured across disease stages and under therapeutic pressure, and to generate hypotheses about adaptation, immune evasion and resistance.
+- Tissue geometry carries clinical signal beyond molecular composition. Explainable models that expose which spatial patterns drive predictions of progression and therapeutic response, distilled into compact, testable tissue descriptions for patient stratification.
+
+The lab collaborates with clinical and experimental biology groups, with groups developing methods for acquiring single-cell spatial omics data, and with computational groups building theoretical and computational frameworks for biomedical data.
+
+## Affiliations
+
+- [Institute for Computational Biomedicine](https://www.medizinische-fakultaet-hd.uni-heidelberg.de/organisation/institute/institute-for-computational-biomedicine): Medical Faculty, Heidelberg University and Heidelberg University Hospital
+- [Translational Spatial Profiling Center (TSPC)](https://www.tspc-hd.com): Jovan Tanevski heads the Computational Platform
+- [ELLIS (European Laboratory for Learning and Intelligent Systems)](https://ellis.eu/): member
+- [Interdisciplinary Center for Scientific Computing (IWR)](https://www.iwr.uni-heidelberg.de/en), Heidelberg University: member
+- [Scientific Machine Learning initiative](https://www.mlai.uni-heidelberg.de/en), Heidelberg University: contributor
 
 ## Tools
 
 - [MISTy](https://github.com/jtanevski/mistyR): Multiview Intercellular SpaTial modeling framework. Explainable ML for learning intra- and intercellular spatial relationships from highly multiplexed spatially resolved data. R package. Publication: https://doi.org/10.1186/s13059-022-02663-5
-- [Kasumi](https://github.com/jtanevski/kasumi): Identification of spatially localized neighborhoods of intra- and intercellular relationships persistent across samples. Learns compressed, explainable representations of spatial omics samples. R package. Publication: https://doi.org/10.1038/s41467-025-59448-0
-- [DOT](https://saezlab.github.io/DOT/): Cell feature transfer from scRNA-seq to spatial omics via multi-objective Frank-Wolfe optimization. Available in R and Python. Publication: https://doi.org/10.1038/s41467-024-48868-z
-- [TOAST](https://github.com/cecca46/TOAST): Topography-aware Optimal Alignment of Spatially-resolved Tissues using Fused Gromov-Wasserstein. Python. Publication: https://doi.org/10.1101/2025.04.15.648894
-- [ContextFlow](https://github.com/santanurathod/ContextFlow): Context-aware flow matching for inferring structural tissue dynamics from longitudinal spatially resolved omics data, integrating ligand-receptor cell-cell communication patterns. Python. Publication: https://doi.org/10.48550/arXiv.2510.02952
-- [SpaCEy](https://github.com/saezlab/SpaCEy): Explainable graph neural network uncovering organizational tissue patterns predictive of clinical outcomes by modeling tissues as spatial graphs of cells and their interactions. Python. Publication: https://doi.org/10.64898/2025.12.12.693857
+- [Kasumi](https://github.com/jtanevski/kasumi): Identification of spatially localized neighborhoods of intra- and intercellular relationships persistent across samples and conditions. Learns compressed, explainable representations of spatial omics samples. R package. Publication: https://doi.org/10.1038/s41467-025-59448-0
+- [DOT](https://saezlab.github.io/DOT/): Cell feature transfer from scRNA-seq to spatial omics via multi-objective Frank-Wolfe optimization. Transfers cell types and states as well as other categorical or continuous features. R package, and Python package at https://github.com/earmingol/DOTpy. Publication: https://doi.org/10.1038/s41467-024-48868-z
+- [TOAST](https://github.com/cecca46/TOAST): Topography-aware Optimal Alignment of Spatially-resolved Tissues. Spatially aware Fused Gromov-Wasserstein framework for intra-sample, inter-sample and temporal alignment of spatial omics data. Python package. Publication: https://doi.org/10.1016/j.crmeth.2026.101373
+- [ContextFlow](https://github.com/santanurathod/ContextFlow): Context-aware flow matching for inferring structural tissue dynamics from longitudinal spatially resolved omics data, integrating local tissue organization and ligand-receptor communication patterns. Python package. Publication: https://doi.org/10.48550/arXiv.2510.02952
+- [SpaCEy](https://github.com/saezlab/SpaCEy): Explainable graph neural network that uncovers organizational tissue patterns predictive of clinical outcomes by modeling tissues as spatial graphs of cells and their interactions. Python package. Publication: https://doi.org/10.1038/s41467-026-77924-z
 
 ## Key Publications
 
 - [Explainable multiview framework for dissecting spatial relationships from highly multiplexed data](https://doi.org/10.1186/s13059-022-02663-5): Introduces MISTy. Genome Biology 23, 97 (2022).
 - [Learning tissue representation by identification of persistent local patterns in spatial omics data](https://doi.org/10.1038/s41467-025-59448-0): Introduces Kasumi. Nature Communications 16, 4071 (2025).
 - [DOT: a flexible multi-objective optimization framework for transferring features across single-cell and spatial omics](https://doi.org/10.1038/s41467-024-48868-z): Introduces DOT. Nature Communications 15, 4994 (2024).
-- [Topography-aware optimal transport for alignment of spatial omics data](https://doi.org/10.1016/j.crmeth.2026.101373): Introduces TOAST. Cell Reports Methods (2026).
+- [Topography-aware optimal transport for alignment of spatial omics data](https://doi.org/10.1016/j.crmeth.2026.101373): Introduces TOAST. Cell Reports Methods 6(4), 101373 (2026).
 - [ContextFlow: Context-Aware Flow Matching For Trajectory Inference From Spatial Omics Data](https://doi.org/10.48550/arXiv.2510.02952): Introduces ContextFlow. arXiv:2510.02952 (2025).
-- [SpaCEy: Discovery of Functional Spatial Tissue Patterns by Association with Clinical Features Using Explainable Graph Neural Networks](https://doi.org/10.64898/2025.12.12.693857): Introduces SpaCEy. bioRxiv (2025).
+- [SpaCEy links spatial tissue patterns to clinical outcomes using explainable graph neural networks](https://doi.org/10.1038/s41467-026-77924-z): Introduces SpaCEy. Nature Communications 17, 10232 (2026).
 - [Pathology-oriented multiplexing enables integrative disease mapping](https://doi.org/10.1038/s41586-025-09225-2): Nature 644, 516–526 (2025).
 - [LIANA+ provides an all-in-one framework for cell–cell communication inference](https://doi.org/10.1038/s41556-024-01469-w): Nature Cell Biology 26, 1613–1622 (2024).
 
+Full publication list, including latest preprints: https://www.tanevskilab.org/#publications
+
 ## People
 
-- Jovan Tanevski (Group Leader) — computational biomedical discovery, spatial omics ML, explainable AI, cell-cell communication
+### Group Leader
+
+- Jovan Tanevski: Group Leader, and Head of the Computational Platform at the Translational Spatial Profiling Center. ORCID: https://orcid.org/0000-0001-7177-1003
+
+### Members
+
 - Chang Lu (Postdoc)
 - Yunfan Bai (Postdoc)
 - Sebastian Gonzalez Tirado (PhD student)
 - Aroj Hada (PhD student)
 - Leoni Zimmermann (PhD student)
 - Alessandro Greco (Scientific programmer)
-- Philipp Schäfer (Associated PhD student)
-- Robin Fallegger (Associated PhD student)
-- Chiara Schiller (Associated PhD student)
-- Francesco Ceccarelli (Associated PhD student)
+
+### Associated Members
+
+- Philipp Schäfer (PhD student)
+- Robin Fallegger (PhD student)
+- Chiara Schiller (PhD student)
+- Francesco Ceccarelli (PhD student)
+
+### Interns
+
+- Arian Mohammadi (MSc Molecular Biotechnology, Heidelberg University)
+- İlayda Ezo Özcan (MSc Molecular Biosciences, Heidelberg University)
+
+## Positions
+
+- Internships and master theses are offered continuously. The recommended internship duration is at least three months.
+- There are currently no open PhD or postdoc positions.
+- To apply, send a one-page letter of motivation tailored to the position, a CV, and a list of references with contact details (references optional for internships and master theses) to contact@tanevskilab.org.
+
+## Funding
+
+Supported by the Bruno und Helene Jöster Stiftung, the [Carl Zeiss Stiftung](https://www.carl-zeiss-stiftung.de), the [Health+Life Science Alliance Heidelberg Mannheim](https://www.health-life-sciences.de), and the [Deutsche Forschungsgemeinschaft (DFG)](https://www.dfg.de).
 
 ## Contact
 
 - Email: contact@tanevskilab.org
-- Address: Institute for Computational Biomedicine, Im Neuenheimer Feld 130.3, 69120 Heidelberg, Germany
+- Address: Institute for Computational Biomedicine, Medical Faculty, Heidelberg University and Heidelberg University Hospital, Im Neuenheimer Feld 130.3, 69120 Heidelberg, Germany
 - GitHub: https://github.com/tanevskilab
 - Google Scholar: https://scholar.google.com/citations?user=F47ynYgAAAAJ
+- ORCID: https://orcid.org/0000-0001-7177-1003
+- LinkedIn: https://www.linkedin.com/in/tanevski
 - Bluesky: https://bsky.app/profile/tanevski.bsky.social
 - X/Twitter: https://x.com/tanevski
